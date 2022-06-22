@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <Task Name="PlcTask" Id="{405c04e8-3e60-4ae2-afa1-924f7f12b77f}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>1000</CycleTime>
+    <Priority>8</Priority>
+    <PouCall>
+      <Name>MAIN</Name>
+    </PouCall>
+    <PouCall>
+      <Name>velocityInput</Name>
+    </PouCall>
+    <PouCall>
+      <Name>torqueInput</Name>
+    </PouCall>
+    <PouCall>
+      <Name>ImpulseTest</Name>
+    </PouCall>
+    <TaskFBGuid>{d27a585a-111b-4440-abe5-46891763e002}</TaskFBGuid>
+    <Fb_init>{9f74b3b3-39e3-4932-86ac-ed6f04db5fa3}</Fb_init>
+    <Fb_exit>{188f4e68-269e-4f52-ade2-611213be915d}</Fb_exit>
+    <CycleUpdate>{34af82d2-114c-46ba-8f30-01e1d2b2f2a4}</CycleUpdate>
+    <PostCycleUpdate>{bb160b7f-f909-442d-b27e-7dc9ff6fd227}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

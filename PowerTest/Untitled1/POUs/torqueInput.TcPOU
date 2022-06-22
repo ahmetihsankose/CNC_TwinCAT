@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="torqueInput" Id="{839c653f-4f0b-4e68-9f1b-243e78656ff8}" SpecialFunc="None">
+    <Declaration><![CDATA[
+
+PROGRAM torqueInput
+VAR
+	
+
+	frequency : LREAL :=0 ;
+	bias : LREAL :=0.4;
+	duration: LREAL := 1000;
+	torqueInput: REAL:= 0.05;
+	torqueStarter : BOOL:= FALSE;
+	state : INT := 10;	
+	counter : LREAL := 0;
+	f0 :LREAL	:=0;
+	f1 :LREAL:=100;
+	T : LREAL ;
+	
+	x: LREAL;
+	
+	
+	trial: INT := 0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE state OF
+	
+10 :
+	
+	IF MAIN.dummy = 0 AND torqueStarter THEN
+		state := 20;
+	ELSIF MAIN.dummy = 1 AND torqueStarter THEN
+		state := 30;
+	END_IF
+ 
+	
+20 :
+IF 	torqueStarter THEN
+	counter := counter +1;
+	IF counter < duration THEN
+		T :=duration/1000.0;
+		frequency := f0 + counter/1000.0 *(f1-f0)/T;	
+		//link.torqueOfsetX := REAL_TO_INT(torqueInput*(1000/2.37));
+		x:=SIN(2*pi*((f0*counter/1000)+((f1-f0)/(2*T)*(EXPT(counter/1000,2)))));
+			IF MAIN.opertionModeRead=10 THEN
+		//link.torqueOfsetX := LREAL_TO_INT(torqueInput*(1000/2.37)*x);
+			link.torqueX := LREAL_TO_INT((torqueInput*1000/2.37)*(x+bias/(torqueInput)));
+			
+			ELSIF MAIN.opertionModeRead=9 THEN				
+			link.torqueOfsetX := LREAL_TO_INT(torqueInput*(1000/2.37)*x);
+			END_IF
+	ELSE
+		link.torqueX := 0;
+		link.torqueOfsetX := 0;
+		torqueStarter := FALSE;
+		counter := 0;
+		state := 60;
+		
+	END_IF
+ELSE
+	link.torqueOfsetX := 0;
+END_IF
+	
+30 :
+IF 	torqueStarter THEN
+	counter := counter +1;
+	IF counter < duration THEN
+		T :=duration/1000.0;
+		frequency := f0 + counter/1000.0 *(f1-f0)/T;	
+		//link.torqueOfsetY := REAL_TO_INT(torqueInput*(1000/2.37));
+		x:=SIN(2*pi*((f0*counter/1000)+((f1-f0)/(2*T)*(EXPT(counter/1000,2)))));
+			IF MAIN.opertionModeRead=10 THEN
+		//link.torqueOfsetY := LREAL_TO_INT(torqueInput*(1000/2.37)*x);
+			link.torqueY := LREAL_TO_INT((torqueInput*1000/2.37)*(x+bias/(torqueInput)));
+			
+			ELSIF MAIN.opertionModeRead=9 THEN				
+			link.torqueOfsetY := LREAL_TO_INT(torqueInput*(1000/2.37)*x);
+			END_IF
+	ELSE
+		link.torqueY := 0;
+		link.torqueOfsetY := 0;
+		torqueStarter := FALSE;
+		counter := 0;
+		state := 60;
+		
+	END_IF
+ELSE
+	link.torqueOfsetY := 0;
+END_IF
+60 :
+	torqueStarter:=FALSE;
+	state :=10;
+	counter := 0;
+			
+	
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="torqueInput">
+      <LineId Id="12" Count="0" />
+      <LineId Id="50" Count="1" />
+      <LineId Id="106" Count="0" />
+      <LineId Id="52" Count="3" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="20" Count="0" />
+      <LineId Id="84" Count="0" />
+      <LineId Id="21" Count="3" />
+      <LineId Id="108" Count="0" />
+      <LineId Id="130" Count="0" />
+      <LineId Id="57" Count="0" />
+      <LineId Id="79" Count="0" />
+      <LineId Id="194" Count="0" />
+      <LineId Id="60" Count="0" />
+      <LineId Id="192" Count="0" />
+      <LineId Id="197" Count="0" />
+      <LineId Id="78" Count="0" />
+      <LineId Id="195" Count="0" />
+      <LineId Id="201" Count="0" />
+      <LineId Id="26" Count="1" />
+      <LineId Id="199" Count="0" />
+      <LineId Id="28" Count="2" />
+      <LineId Id="131" Count="0" />
+      <LineId Id="31" Count="0" />
+      <LineId Id="110" Count="0" />
+      <LineId Id="109" Count="0" />
+      <LineId Id="32" Count="2" />
+      <LineId Id="221" Count="7" />
+      <LineId Id="270" Count="0" />
+      <LineId Id="230" Count="14" />
+      <LineId Id="43" Count="1" />
+      <LineId Id="175" Count="0" />
+      <LineId Id="45" Count="2" />
+      <LineId Id="49" Count="0" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

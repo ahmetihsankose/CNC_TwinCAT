@@ -1,0 +1,4350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TreeItem>
+  <ItemName>Drive 14 (AX8206-0000-0103)</ItemName>
+  <PathName>TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 14 (AX8206-0000-0103)</PathName>
+  <ItemType>5</ItemType>
+  <ItemId>14</ItemId>
+  <ObjectId>#x0302000e</ObjectId>
+  <ItemSubType>9099</ItemSubType>
+  <ItemSubTypeName>AX8206-0000-0103</ItemSubTypeName>
+  <ChildCount>0</ChildCount>
+  <Disabled>false</Disabled>
+  <TreeImageData16x14>424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3c3c3c3c3c3c3c3c3000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3c3c3c3c3c3c3c3c3000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3c3c3c3c3c3c3c3c3000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3c3c3c4c4c4c4c4c4c3c3c3c3c3c3c3c3c3ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffbdc4c5c3c3c3c3c3c3c2c2c2c3c3c3c1c1c1ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3c3c3030303c3c3c3c3c3c3000202c3c3c3ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3c3c3000000c3c3c3c3c3c3000000c3c3c3ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c4c4c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff</TreeImageData16x14>
+  <Xml>
+    <TcDMDrive>
+      <SortId>1</SortId>
+      <DriveModuleType>6</DriveModuleType>
+      <TcLink>
+        <TcPrjPath>..\PowerTest\PowerTest.tsproj</TcPrjPath>
+        <IoItemPathName>TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 14 (AX8206-0000-0103)</IoItemPathName>
+        <ItemId>14</ItemId>
+        <ObjectId>#x0302000e</ObjectId>
+      </TcLink>
+      <OrderCode>AX8206-0x00-0000</OrderCode>
+      <Name>Drive 14 (AX8206-0000-0103)</Name>
+      <ProductRevision>AX8206-0000-0103</ProductRevision>
+      <WatchLog UpdateIntervalInMs="500">
+        <WatchLogItem>
+          <WatchLogParaCoE Index="4120" SubIndex="2" />
+          <Alias>Type</Alias>
+        </WatchLogItem>
+        <WatchLogItem>
+          <WatchLogParaCoE Index="4120" SubIndex="4" />
+          <Alias>Serial Nr</Alias>
+        </WatchLogItem>
+        <WatchLogItem>
+          <WatchLogParaCoE Index="4106" SubIndex="0" />
+          <Alias>Firmware version</Alias>
+        </WatchLogItem>
+      </WatchLog>
+      <Inverter>
+        <Device>
+          <Name>DMInverterTypeDevice</Name>
+          <Parameter>
+            <PropertyName>MaxAllowedMainVoltage</PropertyName>
+            <Value>440</Value>
+          </Parameter>
+          <Parameter>
+            <PropertyName>MinDcLinkVoltage</PropertyName>
+            <Value>361.299737060519</Value>
+          </Parameter>
+          <Parameter>
+            <PropertyName>MaxDcLinkVoltage</PropertyName>
+            <Value>875</Value>
+          </Parameter>
+        </Device>
+        <Channel ChnId="0">
+          <TcLink>
+            <TcPrjPath>..\PowerTest\PowerTest.tsproj</TcPrjPath>
+            <IoItemPathName>TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 14 (AX8206-0000-0103)</IoItemPathName>
+            <NcItemPathName>TINC^NC-Task 1 SAF^Axes^Axis 3</NcItemPathName>
+          </TcLink>
+          <SelectedModifyOptPDOsMode>0</SelectedModifyOptPDOsMode>
+          <Modulo>
+            <Name>ControllerModuloType</Name>
+            <Parameter>
+              <PropertyName>Modulo_IsOn</PropertyName>
+              <Value>0</Value>
+            </Parameter>
+            <Parameter>
+              <PropertyName>Modulo_DataStorage</PropertyName>
+              <Value>0</Value>
+            </Parameter>
+            <Parameter>
+              <PropertyName>Modulo_Value</PropertyName>
+              <Value>4294967296</Value>
+            </Parameter>
+            <Parameter>
+              <PropertyName>Modulo_MinPositionRange</PropertyName>
+              <Value>-2147483648</Value>
+            </Parameter>
+            <Parameter>
+              <PropertyName>Modulo_MaxPositionRange</PropertyName>
+              <Value>2147483647</Value>
+            </Parameter>
+          </Modulo>
+          <Block Id="0">
+            <Motor IsManualInput="false" IsManualMFiInput="false" DataSource="2">
+              <DatabaseType>
+                <SchemaVersion></SchemaVersion>
+                <DataVersion>1.18</DataVersion>
+                <OrderCode>AM8041-1D21-0000</OrderCode>
+                <GroupType></GroupType>
+                <ElectricMotorType>AM8041-xDx1</ElectricMotorType>
+                <MotorfeedbackType>EKM36-0KF0A0S16</MotorfeedbackType>
+                <MotorbrakeType>AM8041-1D21-0000-brake</MotorbrakeType>
+                <AssemblyType></AssemblyType>
+                <VendorName>Beckhoff</VendorName>
+                <IsAc>true</IsAc>
+                <ConstructType>0</ConstructType>
+                <IsBeckhoffMotorShaftSpeicified>false</IsBeckhoffMotorShaftSpeicified>
+              </DatabaseType>
+              <DatabaseParameters>
+                <Parameter>
+                  <Name>Vendor</Name>
+                  <Data type="visibleString">Beckhoff</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>ElecType</Name>
+                  <Data type="visibleString">AM8041-xDx1</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>SerialNr</Name>
+                  <Data type="visibleString">aa536593</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>OrderCode</Name>
+                  <Data type="visibleString">AM8041-1D21-0000</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>ConstrType</Name>
+                  <Data type="real64">0</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>PolePairs</Name>
+                  <Data type="real64">4</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>I0rms</Name>
+                  <Data type="real64" unitSiNumerator="4">1.65</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Inrms</Name>
+                  <Data type="real64" unitSiNumerator="4">1.6</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Iprms</Name>
+                  <Data type="real64" unitSiNumerator="4">8.3</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Unrms</Name>
+                  <Data type="real64" unitSiNumerator="38">400</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Umaxrms</Name>
+                  <Data type="real64" unitSiNumerator="38">890</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>dudtMax</Name>
+                  <Data type="real64" unitSiNumerator="38" unitSiDenominator="3">8000000000</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Mpeak</Name>
+                  <Data type="real64" unitSiNumerator="86">9.67</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>kT</Name>
+                  <Data type="real64" unitSiNumerator="86" unitSiDenominator="4">1.44</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Mi</Name>
+                  <DataTable type="real641" unitSiNumerator="4">
+                    <item>0.83000000000000007</item>
+                    <item>1.6600000000000001</item>
+                    <item>2.49</item>
+                    <item>3.3200000000000003</item>
+                    <item>4.15</item>
+                    <item>4.98</item>
+                    <item>5.8100000000000005</item>
+                    <item>6.6400000000000006</item>
+                    <item>7.47</item>
+                    <item>8.3</item>
+                  </DataTable>
+                  <DataTable type="real641" unitSiNumerator="86">
+                    <item>1.41</item>
+                    <item>2.72</item>
+                    <item>3.94</item>
+                    <item>5.05</item>
+                    <item>6.07</item>
+                    <item>6.98</item>
+                    <item>7.8</item>
+                    <item>8.53</item>
+                    <item>9.15</item>
+                    <item>9.67</item>
+                  </DataTable>
+                </Parameter>
+                <Parameter>
+                  <Name>kErms</Name>
+                  <Data type="real64" unitSiNumerator="38" unitSiDenominator="225">0.101</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>R</Name>
+                  <Data type="real64" unitSiNumerator="40">22.5</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Lq</Name>
+                  <Data type="real64" unitSiNumerator="44">0.0831</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Ld</Name>
+                  <Data type="real64" unitSiNumerator="44">0.0831</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Lqi</Name>
+                  <DataTable type="real641" unitSiNumerator="4">
+                    <item>0.83000000000000007</item>
+                    <item>1.6600000000000001</item>
+                    <item>2.49</item>
+                    <item>3.3200000000000003</item>
+                    <item>4.15</item>
+                    <item>4.98</item>
+                    <item>5.8100000000000005</item>
+                    <item>6.6400000000000006</item>
+                    <item>7.47</item>
+                    <item>8.3</item>
+                  </DataTable>
+                  <DataTable type="real641" unitSiNumerator="44">
+                    <item>0.0747</item>
+                    <item>0.0646</item>
+                    <item>0.054700000000000006</item>
+                    <item>0.0497</item>
+                    <item>0.0438</item>
+                    <item>0.0373</item>
+                    <item>0.035</item>
+                    <item>0.0341</item>
+                    <item>0.0341</item>
+                    <item>0.0341</item>
+                  </DataTable>
+                </Parameter>
+                <Parameter>
+                  <Name>Nmax</Name>
+                  <Data type="real64" unitSiNumerator="225">9000</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>J</Name>
+                  <Data type="real64" unitSiNumerator="224">0.000174</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>TMotorWarn</Name>
+                  <Data type="real64" unitSiNumerator="45">120</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>TMotorLimit</Name>
+                  <Data type="real64" unitSiNumerator="45">140</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Ti2t</Name>
+                  <Data type="real64" unitSiNumerator="3">115</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Mtc</Name>
+                  <Data type="real64" unitSiNumerator="71">30</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>BrakeType</Name>
+                  <Data type="real64">1</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>UBrakeMin</Name>
+                  <Data type="real64" unitSiNumerator="38">21.6</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>UBrakeMax</Name>
+                  <Data type="real64" unitSiNumerator="38">25.4</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>IBrakeMin</Name>
+                  <Data type="real64" unitSiNumerator="4">0.27</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>MBrake</Name>
+                  <Data type="real64" unitSiNumerator="86">9</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>TBrakeOn</Name>
+                  <Data type="real64" unitSiNumerator="3">0.04</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>TBrakeOff</Name>
+                  <Data type="real64" unitSiNumerator="3">0.02</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>IBrakeRed</Name>
+                  <Data type="real64" unitSiNumerator="4">0.405</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>TBrakeRed</Name>
+                  <Data type="real64" unitSiNumerator="3">3</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>TempSensorCon</Name>
+                  <Data type="real64">1</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>TempSensorRT</Name>
+                  <DataTable type="real641" unitSiNumerator="45">
+                    <item>-29.5</item>
+                    <item>2.3000000000000003</item>
+                    <item>31.400000000000002</item>
+                    <item>58</item>
+                    <item>82.300000000000011</item>
+                    <item>104.60000000000001</item>
+                    <item>125.10000000000001</item>
+                    <item>144</item>
+                    <item>161.4</item>
+                    <item>178</item>
+                  </DataTable>
+                  <DataTable type="real641" unitSiNumerator="40">
+                    <item>384</item>
+                    <item>512</item>
+                    <item>640</item>
+                    <item>768</item>
+                    <item>896</item>
+                    <item>1024</item>
+                    <item>1152</item>
+                    <item>1280</item>
+                    <item>1408</item>
+                    <item>1540</item>
+                  </DataTable>
+                </Parameter>
+                <Parameter>
+                  <Name>NnUnrms</Name>
+                  <DataTable type="real641" unitSiNumerator="38">
+                    <item>115</item>
+                    <item>230</item>
+                    <item>400</item>
+                    <item>480</item>
+                  </DataTable>
+                  <DataTable type="real641" unitSiNumerator="225">
+                    <item>600</item>
+                    <item>1500</item>
+                    <item>3000</item>
+                    <item>3400</item>
+                  </DataTable>
+                </Parameter>
+                <Parameter>
+                  <Name>MnUnrms</Name>
+                  <DataTable type="real641" unitSiNumerator="38">
+                    <item>115</item>
+                    <item>230</item>
+                    <item>400</item>
+                    <item>480</item>
+                  </DataTable>
+                  <DataTable type="real641" unitSiNumerator="86">
+                    <item>2.35</item>
+                    <item>2.33</item>
+                    <item>2.3000000000000003</item>
+                    <item>2.29</item>
+                  </DataTable>
+                </Parameter>
+                <Parameter>
+                  <Name>Version</Name>
+                  <Data type="real64">1.18</Data>
+                </Parameter>
+              </DatabaseParameters>
+              <Calc>
+                <CoE>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A Motor parameters / Configured motor type</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12992</Index>
+                    <SubIndex>1</SubIndex>
+                    <Data>414D383034312D78447831</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A Interpolation sub mode select</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>24768</Index>
+                    <SubIndex>0</SubIndex>
+                    <Data>FEFF</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A Motor thermal model / Reaction</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>13000</Index>
+                    <SubIndex>5</SubIndex>
+                    <Data>0200</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A Motor parameters / Motor rated speed</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12992</Index>
+                    <SubIndex>12</SubIndex>
+                    <Data>00803B45</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A Motor parameters / Motor rated torque</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12992</Index>
+                    <SubIndex>13</SubIndex>
+                    <Data>BC741340</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A Motor standstill torque</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>24694</Index>
+                    <SubIndex>0</SubIndex>
+                    <Data>48090000</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A Positive torque/force limit value</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>24800</Index>
+                    <SubIndex>0</SubIndex>
+                    <Data>D007</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A Negative torque/force limit value</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>24801</Index>
+                    <SubIndex>0</SubIndex>
+                    <Data>D007</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A AxisMain parameters / Configured drive type</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12288</Index>
+                    <SubIndex>6</SubIndex>
+                    <Data>4158383230362D303030302D30303030</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A TorqueCtrl parameters / Configured channel rated current</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12867</Index>
+                    <SubIndex>1</SubIndex>
+                    <Data>3333D33F</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A TorqueCtrl parameters / Configured channel peak current</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12867</Index>
+                    <SubIndex>2</SubIndex>
+                    <Data>66669E40</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A TorqueCtrl parameters mappable / Torque control proportional gain q</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12864</Index>
+                    <SubIndex>1</SubIndex>
+                    <Data>C1059543</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A TorqueCtrl parameters mappable / Torque control integral action time q</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12864</Index>
+                    <SubIndex>2</SubIndex>
+                    <Data>8A0E7C39</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A VeloCtrl parameters mappable / Velocity control proportional gain</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12608</Index>
+                    <SubIndex>1</SubIndex>
+                    <Data>7409A73D</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A VeloCtrl parameters mappable / Velocity control integral action time</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12608</Index>
+                    <SubIndex>2</SubIndex>
+                    <Data>6F12033C</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A VeloCtrl parameters mappable / Bipolar velocity limit value</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12608</Index>
+                    <SubIndex>3</SubIndex>
+                    <Data>00980546</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A Motor parameters / Motor temperature sensor connection</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12992</Index>
+                    <SubIndex>15</SubIndex>
+                    <Data>0100</Data>
+                  </InitCmd>
+                </CoE>
+              </Calc>
+            </Motor>
+            <Feedback DataSource="2">
+              <DatabaseType>
+                <OrderCode>EKM36-0KF0A0S16</OrderCode>
+                <IsRotary>true</IsRotary>
+                <AbsolutePosInterface>7</AbsolutePosInterface>
+                <GroupType></GroupType>
+                <ElectricFeedbackType></ElectricFeedbackType>
+              </DatabaseType>
+              <DatabaseParameters>
+                <Parameter>
+                  <Name>AbsolutePositionData_ResolutionSinglePos</Name>
+                  <Data type="real64">18</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>AbsolutePositionData_ResolutionMultiPos</Name>
+                  <Data type="real64">12</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>MaxContinousOperationSpeed</Name>
+                  <Data type="real64" unitSiNumerator="revolutionsminuterpm">9000</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>MaxTemperature</Name>
+                  <Data type="real64" unitSiNumerator="degreeCelsius">125</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>Kind</Name>
+                  <Data type="int16">0</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>AbsolutePositionInterface</Name>
+                  <Data type="int16">7</Data>
+                </Parameter>
+              </DatabaseParameters>
+              <FeedbackUse>Commutation</FeedbackUse>
+              <SerialNo>X3098961P</SerialNo>
+              <Calc>
+                <CoE>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A VeloCtrl observer / Observer type</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12611</Index>
+                    <SubIndex>4</SubIndex>
+                    <Data>0100</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A Modes of operation</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>24672</Index>
+                    <SubIndex>0</SubIndex>
+                    <Data>08</Data>
+                  </InitCmd>
+                  <InitCmd>
+                    <Transition>PS</Transition>
+                    <Comment>Ch A AxisMain parameters encoder polarity / Primary encoder actual values</Comment>
+                    <Timeout>0</Timeout>
+                    <Ccs>1</Ccs>
+                    <Index>12296</Index>
+                    <SubIndex>2</SubIndex>
+                    <Data>00</Data>
+                  </InitCmd>
+                </CoE>
+              </Calc>
+            </Feedback>
+            <Brake>
+              <DatabaseType>
+                <OrderCode>AM8041-1D21-0000-brake</OrderCode>
+                <MountedMotorOrderCode>AM8041-1D21-0000</MountedMotorOrderCode>
+                <BrakeType>HoldingBrake</BrakeType>
+              </DatabaseType>
+              <DatabaseParameters>
+                <Parameter>
+                  <Name>BrakeType</Name>
+                  <Data type="real64">1</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>UBrakeMin</Name>
+                  <Data type="real64" unitSiNumerator="38">21.6</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>UBrakeMax</Name>
+                  <Data type="real64" unitSiNumerator="38">25.4</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>IBrakeMin</Name>
+                  <Data type="real64" unitSiNumerator="4">0.27</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>MBrake</Name>
+                  <Data type="real64" unitSiNumerator="86">9</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>TBrakeOn</Name>
+                  <Data type="real64" unitSiNumerator="3">0.04</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>TBrakeOff</Name>
+                  <Data type="real64" unitSiNumerator="3">0.02</Data>
+                </Parameter>
+                <Parameter>
+                  <Name>TBrakeRed</Name>
+                  <Data type="real64" unitSiNumerator="3">3</Data>
+                </Parameter>
+              </DatabaseParameters>
+            </Brake>
+            <Load MoveStyle="Linear">
+              <IsMotorRotary>true</IsMotorRotary>
+              <Name>InverterChannelTypeBlockLoad</Name>
+              <Parameter>
+                <PropertyName>FeedConstantUnit</PropertyName>
+                <Value>mm</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>FeedConstant</PropertyName>
+                <Value>5</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>GearRatioMotorSide</PropertyName>
+                <Value>1</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>GearRatioLoadSide</PropertyName>
+                <Value>1</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>GearboxInertia</PropertyName>
+                <Value>0</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>LoadInertiaMassReflectedOnGearbox</PropertyName>
+                <Value>0</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>MaxMoveDistance</PropertyName>
+                <Value>0</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>LoadInertiaMass</PropertyName>
+                <Value>0</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>MaxApplicationTorqueForce</PropertyName>
+                <Value>11.88</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>MaxApplicationSpeed</PropertyName>
+                <Value>895.35391</Value>
+              </Parameter>
+            </Load>
+            <Controller />
+          </Block>
+          <WatchLog ChnId="0" UpdateIntervalInMs="500">
+            <WatchLogItem>
+              <WatchLogParaCoE Index="12992" SubIndex="1" />
+              <Alias>Motor type</Alias>
+            </WatchLogItem>
+            <WatchLogItem>
+              <WatchLogParaCoE Index="12993" SubIndex="6" />
+              <Alias>Motor temperature</Alias>
+            </WatchLogItem>
+            <WatchLogItem>
+              <WatchLogParaCoE Index="24831" />
+              <Alias>Velocity command</Alias>
+            </WatchLogItem>
+            <WatchLogItem>
+              <WatchLogParaCoE Index="24684" />
+              <Alias>Actual velocity</Alias>
+            </WatchLogItem>
+            <WatchLogItem>
+              <WatchLogParaCoE Index="24676" />
+              <Alias>Actual position</Alias>
+            </WatchLogItem>
+          </WatchLog>
+        </Channel>
+        <Channel ChnId="1">
+          <TcLink>
+            <TcPrjPath>..\PowerTest\PowerTest.tsproj</TcPrjPath>
+            <IoItemPathName>TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 14 (AX8206-0000-0103)</IoItemPathName>
+            <NcItemPathName>TINC^NC-Task 1 SAF^Axes^Axis 4</NcItemPathName>
+          </TcLink>
+          <SelectedModifyOptPDOsMode>0</SelectedModifyOptPDOsMode>
+          <Block Id="0">
+            <Load MoveStyle="Linear">
+              <IsMotorRotary>true</IsMotorRotary>
+              <Name>InverterChannelTypeBlockLoad</Name>
+              <Parameter>
+                <PropertyName>FeedConstantUnit</PropertyName>
+                <Value>mm</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>FeedConstant</PropertyName>
+                <Value>5</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>GearRatioMotorSide</PropertyName>
+                <Value>1</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>GearRatioLoadSide</PropertyName>
+                <Value>1</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>GearboxInertia</PropertyName>
+                <Value>0</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>LoadInertiaMassReflectedOnGearbox</PropertyName>
+                <Value>0</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>MaxMoveDistance</PropertyName>
+                <Value>0</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>LoadInertiaMass</PropertyName>
+                <Value>0</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>MaxApplicationTorqueForce</PropertyName>
+                <Value>0</Value>
+              </Parameter>
+              <Parameter>
+                <PropertyName>MaxApplicationSpeed</PropertyName>
+                <Value>0</Value>
+              </Parameter>
+            </Load>
+            <Controller />
+          </Block>
+          <WatchLog ChnId="1" UpdateIntervalInMs="500">
+            <WatchLogItem>
+              <WatchLogParaCoE Index="14016" SubIndex="1" />
+              <Alias>Motor type</Alias>
+            </WatchLogItem>
+            <WatchLogItem>
+              <WatchLogParaCoE Index="14017" SubIndex="6" />
+              <Alias>Motor temperature</Alias>
+            </WatchLogItem>
+            <WatchLogItem>
+              <WatchLogParaCoE Index="26879" />
+              <Alias>Velocity command</Alias>
+            </WatchLogItem>
+            <WatchLogItem>
+              <WatchLogParaCoE Index="26732" />
+              <Alias>Actual velocity</Alias>
+            </WatchLogItem>
+            <WatchLogItem>
+              <WatchLogParaCoE Index="26724" />
+              <Alias>Actual position</Alias>
+            </WatchLogItem>
+          </WatchLog>
+        </Channel>
+      </Inverter>
+    </TcDMDrive>
+  </Xml>
+  <BoxDef>
+    <FieldbusAddress>1014</FieldbusAddress>
+    <AmsAddress>
+      <AmsPort>0</AmsPort>
+      <AmsPortTimeout>5</AmsPortTimeout>
+    </AmsAddress>
+  </BoxDef>
+  <EtherCAT>
+    <Slave>
+      <Info>
+        <Name><![CDATA[Drive 14 (AX8206-0000-0103)]]></Name>
+        <PhysAddr>1014</PhysAddr>
+        <AutoIncAddr>65523</AutoIncAddr>
+        <Identification Value="0">
+          <Ado>#x0134</Ado>
+        </Identification>
+        <Physics>KK</Physics>
+        <VendorId>2</VendorId>
+        <ProductCode>537813010</ProductCode>
+        <RevisionNo>6750208</RevisionNo>
+        <SerialNo>0</SerialNo>
+        <ProductRevision>AX8206-0000-0103</ProductRevision>
+      </Info>
+      <ProcessData>
+        <Send>
+          <BitStart>968</BitStart>
+          <BitLength>272</BitLength>
+        </Send>
+        <Recv>
+          <BitStart>968</BitStart>
+          <BitLength>288</BitLength>
+        </Recv>
+        <Sm2>
+          <Type>Outputs</Type>
+          <DefaultSize>32</DefaultSize>
+          <StartAddress>6144</StartAddress>
+          <ControlByte>100</ControlByte>
+          <Enable>1</Enable>
+          <Pdo>5632</Pdo>
+          <Pdo>5664</Pdo>
+          <Pdo>5667</Pdo>
+          <Pdo>5682</Pdo>
+          <Pdo>5696</Pdo>
+          <Pdo>5699</Pdo>
+        </Sm2>
+        <Sm3>
+          <Type>Inputs</Type>
+          <DefaultSize>32</DefaultSize>
+          <StartAddress>10752</StartAddress>
+          <ControlByte>32</ControlByte>
+          <Enable>1</Enable>
+          <Pdo>6688</Pdo>
+          <Pdo>6694</Pdo>
+          <Pdo>6698</Pdo>
+          <Pdo>6706</Pdo>
+          <Pdo>6720</Pdo>
+          <Pdo>6726</Pdo>
+        </Sm3>
+        <Sm4>
+          <Type>DynamicOutputs</Type>
+          <StartAddress>15360</StartAddress>
+          <ControlByte>36</ControlByte>
+          <Enable>0</Enable>
+        </Sm4>
+        <Sm5>
+          <Type>DynamicInputs</Type>
+          <StartAddress>19968</StartAddress>
+          <ControlByte>32</ControlByte>
+          <Enable>0</Enable>
+        </Sm5>
+      </ProcessData>
+      <Mailbox DataLinkLayer="true">
+        <Send>
+          <Start>4096</Start>
+          <Length>512</Length>
+        </Send>
+        <Recv>
+          <Start>5120</Start>
+          <Length>512</Length>
+          <StatusBitAddr>7</StatusBitAddr>
+        </Recv>
+        <Timeout>
+          <ReturningRequest>100</ReturningRequest>
+          <Response>2000</Response>
+        </Timeout>
+        <BootStrap>
+          <Send>
+            <Start>4096</Start>
+            <Length>532</Length>
+          </Send>
+          <Recv>
+            <Start>6144</Start>
+            <Length>532</Length>
+          </Recv>
+        </BootStrap>
+        <Protocol>AoE</Protocol>
+        <Protocol>CoE</Protocol>
+        <Protocol>FoE</Protocol>
+        <CoE>
+          <InitCmds>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A00 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6656</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1AE0 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6880</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1600 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5632</Index>
+              <SubIndex>0</SubIndex>
+              <Data>01001001002c</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x16E0 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5856</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A20 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6688</Index>
+              <SubIndex>0</SubIndex>
+              <Data>07000100000001023e6001033e6005000000100041602000646020006c60</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B00 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6912</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1620 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5664</Index>
+              <SubIndex>0</SubIndex>
+              <Data>010010004060</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1700 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5888</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A23 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6691</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B03 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6915</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1623 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5667</Index>
+              <SubIndex>0</SubIndex>
+              <Data>040020007a602000ff602000b1602000b060</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1703 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5891</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A26 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6694</Index>
+              <SubIndex>0</SubIndex>
+              <Data>01002000f460</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B06 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6918</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1626 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5670</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1706 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5894</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A2A entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6698</Index>
+              <SubIndex>0</SubIndex>
+              <Data>010020034131</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B0A entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6922</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x162A entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5674</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x170A entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5898</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A32 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6706</Index>
+              <SubIndex>0</SubIndex>
+              <Data>02001000776020034132</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B12 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6930</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1632 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5682</Index>
+              <SubIndex>0</SubIndex>
+              <Data>02001000b26010007160</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1712 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5906</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A36 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6710</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B16 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6934</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A37 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6711</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B17 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6935</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A40 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6720</Index>
+              <SubIndex>0</SubIndex>
+              <Data>06000100000001023e6801033e68050000001000416820006468</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B20 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6944</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1640 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5696</Index>
+              <SubIndex>0</SubIndex>
+              <Data>010010004068</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1720 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5920</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A43 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6723</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B23 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6947</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1643 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5699</Index>
+              <SubIndex>0</SubIndex>
+              <Data>020020007a682000ff68</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1723 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5923</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A46 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6726</Index>
+              <SubIndex>0</SubIndex>
+              <Data>01002000f468</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B26 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6950</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1646 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5702</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1726 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5926</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A4A entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6730</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B2A entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6954</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x164A entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5706</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x172A entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5930</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A52 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6738</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B32 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6962</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1652 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5714</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1732 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>5938</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1A56 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6742</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1B36 entries]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>6966</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1C12 index]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>7186</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0600001620162316321640164316</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1C13 index]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>7187</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0600201a261a2a1a321a401a461a</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1C14 index]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>7188</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>PS</Transition>
+              <Comment><![CDATA[download pdo 0x1C15 index]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>7189</Index>
+              <SubIndex>0</SubIndex>
+              <Data>0000</Data>
+            </InitCmd>
+            <InitCmd Fixed="true" CompleteAccess="true">
+              <Transition>IP</Transition>
+              <Comment><![CDATA[download slot cfg]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>61488</Index>
+              <SubIndex>0</SubIndex>
+              <Data>5f006400670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e80367000000000000000000b80b6700000000000000000070176700000000000000000000000000102767000000000000000000000000000000000000000000000000000000000050466700000000000000000000000000f0556700d95967000000000000000000000000000000000000000000000000000000000000000000e80367000000000000000000b80b6700000000000000000070176700000000000000000000000000102767000000000000000000000000000000000000000000000000000000000050466700000000000000000000000000f05567000000000000000000000000000000000000000000000000000000000000000000</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>IP</Transition>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>4339</Index>
+              <SubIndex>5</SubIndex>
+              <Data>0100</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[DeviceMain Parameters / Mains max voltage]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>11266</Index>
+              <SubIndex>5</SubIndex>
+              <Data>3011</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[DeviceMain Parameters / Min DC link voltage]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>11266</Index>
+              <SubIndex>1</SubIndex>
+              <Data>6901</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Configured motor type]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>1</SubIndex>
+              <Data>414d383034312d78447831</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Pole pairs]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>2</SubIndex>
+              <Data>0400</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor moment of inertia]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>11</SubIndex>
+              <Data>c5733639</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor peak torque]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>23</SubIndex>
+              <Data>52b81a41</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor peak current]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>3</SubIndex>
+              <Data>cdcc0441</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor nominal voltage]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>4</SubIndex>
+              <Data>0000c843</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor max voltage]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>5</SubIndex>
+              <Data>00805e44</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Winding resistance R]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>6</SubIndex>
+              <Data>0000b441</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Winding inductance Ld]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>7</SubIndex>
+              <Data>5530aa3d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Winding inductance Lq]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>8</SubIndex>
+              <Data>5530aa3d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor warning temperature]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>9</SubIndex>
+              <Data>0000f042</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor shut down temperature]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>10</SubIndex>
+              <Data>00000c43</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor max voltage slope]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>16</SubIndex>
+              <Data>286bee4f</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor thermal model / Motor thermal time constant]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13000</Index>
+              <SubIndex>1</SubIndex>
+              <Data>0000e144</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor thermal model / Winding thermal time constant]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13000</Index>
+              <SubIndex>2</SubIndex>
+              <Data>55559942</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor standstill current]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>24693</Index>
+              <SubIndex>0</SubIndex>
+              <Data>72060000</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Max motor speed]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>24704</Index>
+              <SubIndex>0</SubIndex>
+              <Data>28230000</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor torque characteristic / SubIndex 001]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12994</Index>
+              <SubIndex>1</SubIndex>
+              <Data>e17ad43f</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor torque characteristic / SubIndex 002]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12994</Index>
+              <SubIndex>2</SubIndex>
+              <Data>cdcc8440</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor torque characteristic / SubIndex 003]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12994</Index>
+              <SubIndex>3</SubIndex>
+              <Data>cdcc0441</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor torque characteristic / SubIndex 004]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12994</Index>
+              <SubIndex>4</SubIndex>
+              <Data>953c2e40</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor torque characteristic / SubIndex 005]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12994</Index>
+              <SubIndex>5</SubIndex>
+              <Data>9e24c240</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor torque characteristic / SubIndex 006]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12994</Index>
+              <SubIndex>6</SubIndex>
+              <Data>eac01a41</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 001]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>1</SubIndex>
+              <Data>e17a543f</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 002]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>2</SubIndex>
+              <Data>e17ad43f</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 003]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>3</SubIndex>
+              <Data>295c1f40</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 004]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>4</SubIndex>
+              <Data>e17a5440</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 005]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>5</SubIndex>
+              <Data>cdcc8440</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 006]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>6</SubIndex>
+              <Data>295c9f40</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 007]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>7</SubIndex>
+              <Data>85ebb940</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 008]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>8</SubIndex>
+              <Data>e17ad440</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 009]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>9</SubIndex>
+              <Data>3d0aef40</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 010]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>10</SubIndex>
+              <Data>cdcc0441</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 011]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>11</SubIndex>
+              <Data>50fc983d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 012]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>12</SubIndex>
+              <Data>014d843d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 013]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>13</SubIndex>
+              <Data>1b0d603d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 014]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>14</SubIndex>
+              <Data>3a924b3d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 015]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>15</SubIndex>
+              <Data>a167333d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 016]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>16</SubIndex>
+              <Data>e3c7183d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 017]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>17</SubIndex>
+              <Data>295c0f3d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 018]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>18</SubIndex>
+              <Data>71ac0b3d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 019]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>19</SubIndex>
+              <Data>71ac0b3d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor inductance characteristic / SubIndex 020]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13004</Index>
+              <SubIndex>20</SubIndex>
+              <Data>71ac0b3d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 001]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>1</SubIndex>
+              <Data>0000ecc1</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 002]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>2</SubIndex>
+              <Data>33331340</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 003]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>3</SubIndex>
+              <Data>3333fb41</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 004]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>4</SubIndex>
+              <Data>00006842</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 005]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>5</SubIndex>
+              <Data>9a99a442</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 006]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>6</SubIndex>
+              <Data>3333d142</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 007]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>7</SubIndex>
+              <Data>3333fa42</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 008]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>8</SubIndex>
+              <Data>00001043</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 009]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>9</SubIndex>
+              <Data>66662143</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 010]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>10</SubIndex>
+              <Data>00003243</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 011]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>11</SubIndex>
+              <Data>0000c043</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 012]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>12</SubIndex>
+              <Data>00000044</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 013]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>13</SubIndex>
+              <Data>00002044</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 014]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>14</SubIndex>
+              <Data>00004044</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 015]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>15</SubIndex>
+              <Data>00006044</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 016]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>16</SubIndex>
+              <Data>00008044</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 017]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>17</SubIndex>
+              <Data>00009044</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 018]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>18</SubIndex>
+              <Data>0000a044</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 019]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>19</SubIndex>
+              <Data>0000b044</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor temperature sensor characteristic / SubIndex 020]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12999</Index>
+              <SubIndex>20</SubIndex>
+              <Data>0080c044</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A AxisMain parameters / Motor brake type]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12288</Index>
+              <SubIndex>1</SubIndex>
+              <Data>0100</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A AxisMain parameters / Drive on delay time]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12288</Index>
+              <SubIndex>3</SubIndex>
+              <Data>50000000</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A AxisMain parameters / Drive off delay time]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12288</Index>
+              <SubIndex>4</SubIndex>
+              <Data>28000000</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A AxisMain parameters / Motor brake current monitoring level]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12288</Index>
+              <SubIndex>5</SubIndex>
+              <Data>713d8a3e</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Interpolation sub mode select]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>24768</Index>
+              <SubIndex>0</SubIndex>
+              <Data>feff</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor thermal model / Reaction]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13000</Index>
+              <SubIndex>5</SubIndex>
+              <Data>0200</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor rated speed]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>12</SubIndex>
+              <Data>00803b45</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor rated torque]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>13</SubIndex>
+              <Data>bc741340</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor standstill torque]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>24694</Index>
+              <SubIndex>0</SubIndex>
+              <Data>48090000</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Positive torque/force limit value]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>24800</Index>
+              <SubIndex>0</SubIndex>
+              <Data>d007</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Negative torque/force limit value]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>24801</Index>
+              <SubIndex>0</SubIndex>
+              <Data>d007</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A AxisMain parameters / Configured drive type]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12288</Index>
+              <SubIndex>6</SubIndex>
+              <Data>4158383230362d303030302d30303030</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A TorqueCtrl parameters / Configured channel rated current]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12867</Index>
+              <SubIndex>1</SubIndex>
+              <Data>3333d33f</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A TorqueCtrl parameters / Configured channel peak current]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12867</Index>
+              <SubIndex>2</SubIndex>
+              <Data>66669e40</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A TorqueCtrl parameters mappable / Torque control proportional gain q]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12864</Index>
+              <SubIndex>1</SubIndex>
+              <Data>c1059543</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A TorqueCtrl parameters mappable / Torque control integral action time q]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12864</Index>
+              <SubIndex>2</SubIndex>
+              <Data>8a0e7c39</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A VeloCtrl parameters mappable / Velocity control proportional gain]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12608</Index>
+              <SubIndex>1</SubIndex>
+              <Data>7409a73d</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A VeloCtrl parameters mappable / Velocity control integral action time]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12608</Index>
+              <SubIndex>2</SubIndex>
+              <Data>6f12033c</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A VeloCtrl parameters mappable / Bipolar velocity limit value]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12608</Index>
+              <SubIndex>3</SubIndex>
+              <Data>00980546</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A VeloCtrl observer / Observer type]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12611</Index>
+              <SubIndex>4</SubIndex>
+              <Data>0100</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Modes of operation]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>24672</Index>
+              <SubIndex>0</SubIndex>
+              <Data>08</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A AxisMain parameters encoder polarity / Primary encoder actual values]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12296</Index>
+              <SubIndex>2</SubIndex>
+              <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch A Motor parameters / Motor temperature sensor connection]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>12992</Index>
+              <SubIndex>15</SubIndex>
+              <Data>0100</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[DeviceMain Parameters / Max DC link voltage]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>11266</Index>
+              <SubIndex>2</SubIndex>
+              <Data>6b03</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[DeviceMain Power supply Connection / Power supply EtherCAT Address]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>11267</Index>
+              <SubIndex>1</SubIndex>
+              <Data>f403</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch B TorqueCtrl parameters / Configured channel rated current]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13891</Index>
+              <SubIndex>1</SubIndex>
+              <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Ch B TorqueCtrl parameters / Configured channel peak current]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>13891</Index>
+              <SubIndex>2</SubIndex>
+              <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[Startup key]]></Comment>
+              <Timeout>0</Timeout>
+              <Ccs>1</Ccs>
+              <Index>11293</Index>
+              <SubIndex>2</SubIndex>
+              <Data>7c8815cb</Data>
+            </InitCmd>
+          </InitCmds>
+          <CanOpenType>47</CanOpenType>
+          <Profile>
+            <ChannelInfo>
+              <ProfileNo>402</ProfileNo>
+              <AddInfo>0</AddInfo>
+              <DisplayName>Ch A</DisplayName>
+            </ChannelInfo>
+            <ChannelInfo>
+              <ProfileNo>402</ProfileNo>
+              <AddInfo>0</AddInfo>
+              <DisplayName>Ch B</DisplayName>
+            </ChannelInfo>
+          </Profile>
+        </CoE>
+        <AoE>
+          <InitCmds>
+            <InitCmd Fixed="true">
+              <Transition>IP</Transition>
+              <Transition>PS</Transition>
+              <Comment><![CDATA[AoE Init Cmd (download NetId)]]></Comment>
+              <Timeout>0</Timeout>
+              <Data>ac12ee0a0601f603ac12ee0a0601f60303000400120000000000000001000000010000000300000006000000ac12ee0a060f</Data>
+            </InitCmd>
+          </InitCmds>
+          <NetId>172.18.238.10.6.15</NetId>
+        </AoE>
+      </Mailbox>
+      <InitCmds>
+        <InitCmd>
+          <Transition>PI</Transition>
+          <Transition>BI</Transition>
+          <Transition>SI</Transition>
+          <Transition>OI</Transition>
+          <Comment><![CDATA[set device state to INIT]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>288</Ado>
+          <Data>1100</Data>
+          <Retries>3</Retries>
+          <Timeout>30000</Timeout>
+        </InitCmd>
+        <InitCmd>
+          <Transition>SI</Transition>
+          <Transition>OI</Transition>
+          <Comment><![CDATA[clear DC activation]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>2432</Ado>
+          <Data>0000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PI</Transition>
+          <Transition>SI</Transition>
+          <Transition>OI</Transition>
+          <Comment><![CDATA[check device state for INIT]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>1</Cmd>
+          <Adp>65523</Adp>
+          <Ado>304</Ado>
+          <Data>0000</Data>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>0100</Data>
+            <DataMask>0f00</DataMask>
+            <Timeout>30000</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>BI</Transition>
+          <Comment><![CDATA[check device state for INIT]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>1</Cmd>
+          <Adp>65523</Adp>
+          <Ado>304</Ado>
+          <Data>0000</Data>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>0100</Data>
+            <DataMask>0f00</DataMask>
+            <Timeout>60000</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Transition>IB</Transition>
+          <Comment><![CDATA[set device state to INIT]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>288</Ado>
+          <Data>1100</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Timeout>60000</Timeout>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Transition>IB</Transition>
+          <Comment><![CDATA[check device state for INIT]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>1</Cmd>
+          <Adp>65523</Adp>
+          <Ado>304</Ado>
+          <Data>0000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>0100</Data>
+            <DataMask>0f00</DataMask>
+            <Timeout>60000</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[assign EEPROM to ECAT]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1280</Ado>
+          <Data>00</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[check vendor id]]></Comment>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1282</Ado>
+          <Data>000108000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[check vendor id]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>1</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1288</Ado>
+          <Data>00000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>02000000</Data>
+            <Timeout>100</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[check product code]]></Comment>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1282</Ado>
+          <Data>00010a000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[check product code]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>1</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1288</Ado>
+          <Data>00000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>12600e20</Data>
+            <Timeout>100</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[check revision number (lo word)]]></Comment>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1282</Ado>
+          <Data>00010c000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[check revision number (lo word)]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>1</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1288</Ado>
+          <Data>0000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>0000</Data>
+            <Timeout>100</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[check revision number (hi word >=)]]></Comment>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1282</Ado>
+          <Data>00010d000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[check revision number (hi word >=)]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>1</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1288</Ado>
+          <Data>0000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>6700</Data>
+            <Timeout>100</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Transition>IB</Transition>
+          <Comment><![CDATA[set physical address]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>16</Ado>
+          <Data>f603</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Transition>IB</Transition>
+          <Transition>PI</Transition>
+          <Transition>SI</Transition>
+          <Transition>OI</Transition>
+          <Comment><![CDATA[clear sm 0/1 (mailbox out/in)]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2048</Ado>
+          <Data>00000000000000000000000000000000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>BI</Transition>
+          <Comment><![CDATA[clear sm 0/1 (mailbox out/in)]]></Comment>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>2048</Ado>
+          <Data>00000000000000000000000000000000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[set sm 0 (mailbox out)]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2048</Ado>
+          <Data>0010000226000100</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[set sm 1 (mailbox in)]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2056</Ado>
+          <Data>0014000222000100</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IB</Transition>
+          <Comment><![CDATA[set sm 0 (bootstrap out)]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2048</Ado>
+          <Data>0010140226000100</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IB</Transition>
+          <Comment><![CDATA[set sm 1 (bootstrap in)]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2056</Ado>
+          <Data>0018140222000100</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PS</Transition>
+          <Comment><![CDATA[set DC cycle time]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2464</Ado>
+          <Data>24f400005c901d00</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PS</Transition>
+          <Comment><![CDATA[set DC start time]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2448</Ado>
+          <Data>24f4000000000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PS</Transition>
+          <Comment><![CDATA[set DC activation]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2432</Ado>
+          <Data>0007</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PS</Transition>
+          <Comment><![CDATA[set DC latch cfg]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2472</Ado>
+          <Data>0000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Transition>PP</Transition>
+          <Comment><![CDATA[clear DC activation]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2432</Ado>
+          <Data>0000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>SP</Transition>
+          <Transition>OP</Transition>
+          <Comment><![CDATA[set device state to PREOP]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>288</Ado>
+          <Data>1200</Data>
+          <Retries>300</Retries>
+          <Timeout>300</Timeout>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Transition>SP</Transition>
+          <Transition>SI</Transition>
+          <Transition>OP</Transition>
+          <Transition>OI</Transition>
+          <Comment><![CDATA[clear sms]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2064</Ado>
+          <DataLength>32</DataLength>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PS</Transition>
+          <Comment><![CDATA[set sm 2 (outputs)]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2064</Ado>
+          <Data>0018220064000100</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PS</Transition>
+          <Comment><![CDATA[set sm 3 (inputs)]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2072</Ado>
+          <Data>002a240020000100</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PS</Transition>
+          <Comment><![CDATA[set fmmu 0 (outputs)]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>1536</Ado>
+          <Data>32000001220000070018000201000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PS</Transition>
+          <Comment><![CDATA[set fmmu 1 (inputs)]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>1552</Ado>
+          <Data>3200000124000007002a000101000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Transition>IB</Transition>
+          <Comment><![CDATA[set fmmu 2 (mailbox state)]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>1568</Ado>
+          <Data>00000009010007070d08000101000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>OS</Transition>
+          <Comment><![CDATA[set device state to SAFEOP]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>288</Ado>
+          <Data>0400</Data>
+          <Retries>3</Retries>
+          <Timeout>300</Timeout>
+        </InitCmd>
+        <InitCmd>
+          <Transition>SP</Transition>
+          <Transition>SI</Transition>
+          <Transition>OP</Transition>
+          <Transition>OI</Transition>
+          <Comment><![CDATA[clear fmmu 0]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>1536</Ado>
+          <Data>00000000000000000000000000000000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>SP</Transition>
+          <Transition>SI</Transition>
+          <Transition>OP</Transition>
+          <Transition>OI</Transition>
+          <Comment><![CDATA[clear fmmu 1]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>1552</Ado>
+          <Data>00000000000000000000000000000000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PI</Transition>
+          <Transition>BI</Transition>
+          <Transition>SI</Transition>
+          <Transition>OI</Transition>
+          <Comment><![CDATA[clear fmmu 2]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>1568</Ado>
+          <Data>00000000000000000000000000000000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Comment><![CDATA[clear fmmu 3]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>1584</Ado>
+          <Data>00000000000000000000000000000000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Comment><![CDATA[clear fmmu 4]]></Comment>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>1600</Ado>
+          <Data>00000000000000000000000000000000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>SP</Transition>
+          <Transition>OP</Transition>
+          <Comment><![CDATA[clear DC activation]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>2432</Ado>
+          <Data>0000</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>SP</Transition>
+          <Transition>OP</Transition>
+          <Comment><![CDATA[check device state for PREOP]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>4</Cmd>
+          <Adp>1014</Adp>
+          <Ado>304</Ado>
+          <Data>000000000000</Data>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>020000000000</Data>
+            <DataMask>0f0000000000</DataMask>
+            <Timeout>30000</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Transition>IB</Transition>
+          <Comment><![CDATA[assign EEPROM to PDI]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>1280</Ado>
+          <Data>01</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>II</Transition>
+          <Comment><![CDATA[assign EEPROM back to ECAT]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1280</Ado>
+          <Data>00</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[set device state to PREOP]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>288</Ado>
+          <Data>1200</Data>
+          <Cnt>1</Cnt>
+          <Retries>300</Retries>
+          <Timeout>60000</Timeout>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Comment><![CDATA[check device state for PREOP]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>4</Cmd>
+          <Adp>1014</Adp>
+          <Ado>304</Ado>
+          <Data>000000000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>020000000000</Data>
+            <DataMask>1f0000000000</DataMask>
+            <Timeout>60000</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IP</Transition>
+          <Transition>BI</Transition>
+          <Comment><![CDATA[assign EEPROM back to ECAT]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>2</Cmd>
+          <Adp>65523</Adp>
+          <Ado>1280</Ado>
+          <Data>00</Data>
+          <Retries>3</Retries>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IB</Transition>
+          <Comment><![CDATA[set device state to BOOT]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>288</Ado>
+          <Data>1300</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Timeout>60000</Timeout>
+        </InitCmd>
+        <InitCmd>
+          <Transition>IB</Transition>
+          <Comment><![CDATA[check device state for BOOT]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>4</Cmd>
+          <Adp>1014</Adp>
+          <Ado>304</Ado>
+          <Data>000000000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>030000000000</Data>
+            <DataMask>1f0000000000</DataMask>
+            <Timeout>60000</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PS</Transition>
+          <Comment><![CDATA[set device state to SAFEOP]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>288</Ado>
+          <Data>0400</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Timeout>30000</Timeout>
+        </InitCmd>
+        <InitCmd>
+          <Transition>PS</Transition>
+          <Comment><![CDATA[check device state for SAFEOP]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>4</Cmd>
+          <Adp>1014</Adp>
+          <Ado>304</Ado>
+          <Data>000000000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>040000000000</Data>
+            <DataMask>1f0000000000</DataMask>
+            <Timeout>30000</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>OS</Transition>
+          <Comment><![CDATA[check device state for SAFEOP]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>4</Cmd>
+          <Adp>1014</Adp>
+          <Ado>304</Ado>
+          <Data>000000000000</Data>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>040000000000</Data>
+            <DataMask>0f0000000000</DataMask>
+            <Timeout>300</Timeout>
+          </Validate>
+        </InitCmd>
+        <InitCmd>
+          <Transition>SO</Transition>
+          <Comment><![CDATA[set device state to OP]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>5</Cmd>
+          <Adp>1014</Adp>
+          <Ado>288</Ado>
+          <Data>0800</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Timeout>30000</Timeout>
+        </InitCmd>
+        <InitCmd>
+          <Transition>SO</Transition>
+          <Comment><![CDATA[check device state for OP]]></Comment>
+          <Requires>cycle</Requires>
+          <Cmd>4</Cmd>
+          <Adp>1014</Adp>
+          <Ado>304</Ado>
+          <Data>000000000000</Data>
+          <Cnt>1</Cnt>
+          <Retries>3</Retries>
+          <Validate>
+            <Data>080000000000</Data>
+            <DataMask>1f0000000000</DataMask>
+            <Timeout>30000</Timeout>
+          </Validate>
+        </InitCmd>
+      </InitCmds>
+      <PreviousPort Selected="true">
+        <Port>B</Port>
+        <PhysAddr>1013</PhysAddr>
+      </PreviousPort>
+      <SyncUnits>
+        <SyncUnit></SyncUnit>
+        <SyncUnit></SyncUnit>
+      </SyncUnits>
+      <DC>
+        <PotentialReferenceClock>false</PotentialReferenceClock>
+        <TimeLoopControlOnly>false</TimeLoopControlOnly>
+        <ReferenceClock>false</ReferenceClock>
+        <CycleTime0>62500</CycleTime0>
+        <CycleTime1>1937500</CycleTime1>
+        <ShiftTime>0</ShiftTime>
+        <OpMode Selected="true">
+          <Name>DcSync62500</Name>
+          <Desc>Sync cycle time 62.500</Desc>
+          <AssignActivate>#x700</AssignActivate>
+          <CycleTimeSync0 Factor="0">62500</CycleTimeSync0>
+          <ShiftTimeSync0>0</ShiftTimeSync0>
+          <CycleTimeSync1 Factor="-1">0</CycleTimeSync1>
+          <ShiftTimeSync1>0</ShiftTimeSync1>
+        </OpMode>
+      </DC>
+      <Settings>
+        <StateMachine>
+          <AutoRestoreStates>true</AutoRestoreStates>
+          <WaitForWcStateOkay>false</WaitForWcStateOkay>
+          <ReInitAfterCommError>true</ReInitAfterCommError>
+          <LogCommChanges>true</LogCommChanges>
+          <FinalState>SAFEOP_CFGMODE</FinalState>
+          <Timeout>
+            <I2P>60000</I2P>
+            <P2S2O>30000</P2S2O>
+            <Back2PI>30000</Back2PI>
+            <O2S>300</O2S>
+          </Timeout>
+          <CheckVendorId>EQ</CheckVendorId>
+          <CheckProductCode>EQ</CheckProductCode>
+          <CheckRevisionNo>LW_EQ_HW_EQ_OR_G</CheckRevisionNo>
+          <CheckSerialNo></CheckSerialNo>
+          <CheckIdentification></CheckIdentification>
+        </StateMachine>
+        <Watchdog>
+          <Divider0400 Enabled="false">2498</Divider0400>
+          <PdiTime0410 Enabled="false">1000</PdiTime0410>
+          <SmTime0420 Enabled="false">1000</SmTime0420>
+        </Watchdog>
+        <PdoSettings>
+          <PdoAssign>1</PdoAssign>
+          <PdoConfig>1</PdoConfig>
+        </PdoSettings>
+        <InfoData>
+          <State>true</State>
+          <AdsAddress>true</AdsAddress>
+          <AoENetId>true</AoENetId>
+          <Channels>true</Channels>
+          <DcTimes>true</DcTimes>
+          <ObjectId>false</ObjectId>
+        </InfoData>
+      </Settings>
+      <EsiFile>C:\TwinCAT\3.1\Config\Io\EtherCAT\Beckhoff AX8yxx.xml</EsiFile>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>DeviceMainSlot</Name>
+        <ModuleIdent>#x670064</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>6750308</ModuleIdent>
+          <TxPdo>
+            <Index DependOnSlot="true">#x1a00</Index>
+            <Name>DeviceMain Inputs</Name>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1ae0</Index>
+            <Name>DeviceMain Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo Sm="2">
+            <Index DependOnSlot="true">#x1600</Index>
+            <Name>DeviceMain Outputs</Name>
+            <Entry Fixed="true">
+              <Index>#x2c00</Index>
+              <SubIndex>1</SubIndex>
+              <BitLen>16</BitLen>
+              <Name>Power supply controlword</Name>
+              <Comment>This object shall be linked to the Statusword of the connected PowerSupply device. (I.e. AX8620)</Comment>
+              <DataType>UINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>121</IndexOffset>
+                <Length>2</Length>
+              </AdsInfo>
+            </Entry>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x16e0</Index>
+            <Name>DeviceMain Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Device</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="0" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>DeviceDebugSlot</Name>
+        <ModuleIdent>#x677d00</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>AxisMainSlot</Name>
+        <ModuleIdent>#x6703e8</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>6751208</ModuleIdent>
+          <TxPdo Mandatory="true" Sm="3">
+            <Index DependOnSlot="true">#x1a20</Index>
+            <Name>Ch A AxisMain Inputs</Name>
+            <Entry Fixed="true">
+              <Index>#x0</Index>
+              <BitLen>1</BitLen>
+            </Entry>
+            <Entry Fixed="true">
+              <Index DependOnSlotGroup="true">#x603e</Index>
+              <SubIndex>2</SubIndex>
+              <BitLen>1</BitLen>
+              <Name>Position actual value invalid</Name>
+              <Comment>This object shall indicate if the position encoder measured value is in invalid state.</Comment>
+              <DataType>BIT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61489</IndexGroup>
+                <IndexOffset>969</IndexOffset>
+                <Length>1</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry Fixed="true">
+              <Index DependOnSlotGroup="true">#x603e</Index>
+              <SubIndex>3</SubIndex>
+              <BitLen>1</BitLen>
+              <Name>1st Additional position actual value invalid</Name>
+              <Comment>This object shall indicate if the first position encoder measured value is in invalid state.</Comment>
+              <DataType>BIT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61489</IndexGroup>
+                <IndexOffset>970</IndexOffset>
+                <Length>1</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry Fixed="true">
+              <Index>#x0</Index>
+              <BitLen>5</BitLen>
+            </Entry>
+            <Entry Fixed="true">
+              <Index DependOnSlotGroup="true">#x6041</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>16</BitLen>
+              <Name>Ch A Statusword</Name>
+              <Comment>This object shall provide the status of the PDS FSA.
+- Bit 0: Ready to switch on
+- Bit 1: Switched on
+- Bit 2: Operation enabled
+- Bit 3: Fault
+- Bit 4: Voltage enabled
+- Bit 5: Quick stop
+- Bit 6: Switch on disabled
+- Bit 7: Warning
+- Bit 8: reserved
+- Bit 9: Remote
+- Bit 10: Status toggle (see also Object 0x60D9 and 0x60DA)
+- Bit 11: Internal limit active
+- Bit 12: Drive follows the command value (cyclic modes of operation)
+- Bit 13: Input cycle counter (see also Object 0x60D9 and 0x60DA)
+- Bit 14: reserved
+- Bit 15: reserved</Comment>
+              <DataType>UINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61488</IndexGroup>
+                <IndexOffset>122</IndexOffset>
+                <Length>2</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x6064</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch A Position actual value</Name>
+              <Comment>This object shall provide the actual value of the position measurement device.</Comment>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61488</IndexGroup>
+                <IndexOffset>124</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x606c</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch A Velocity actual value</Name>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61488</IndexGroup>
+                <IndexOffset>128</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b00</Index>
+            <Name>Ch A AxisMain Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo Mandatory="true" Sm="2">
+            <Index DependOnSlot="true">#x1620</Index>
+            <Name>Ch A AxisMain Outputs</Name>
+            <Entry Fixed="true">
+              <Index DependOnSlotGroup="true">#x6040</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>16</BitLen>
+              <Name>Ch A Controlword</Name>
+              <Comment>This object shall indicate the received command controlling the PDS FSA.
+- Bit 0: Switch on
+- Bit 1: Enable voltage
+- Bit 2: Quick stop
+- Bit 3: Enable operation
+- Bit 4: reserved
+- Bit 5-6: Output cycle counter (see also Object 0x60D9 and 0x60DA)
+- Bit 7: Fault reset
+- Bit 8: Halt
+- Bit 9-15: reserved</Comment>
+              <DataType>UINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>123</IndexOffset>
+                <Length>2</Length>
+              </AdsInfo>
+            </Entry>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x1700</Index>
+            <Name>Ch A AxisMain Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>InterpolatorSlot</Name>
+        <ModuleIdent>#x670bb8</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>6753208</ModuleIdent>
+          <TxPdo>
+            <Index DependOnSlot="true">#x1a23</Index>
+            <Name>Ch A Interpolator Inputs</Name>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b03</Index>
+            <Name>Ch A Interpolator Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo Sm="2">
+            <Index DependOnSlot="true">#x1623</Index>
+            <Name>Ch A Interpolator Outputs</Name>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x607a</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch A Target position</Name>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>125</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x60ff</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch A Target velocity</Name>
+              <Comment>This object shall indicate the configured velocity threshold. The value shall be given in user defined velocity units.</Comment>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>129</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x60b1</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch A Velocity offset</Name>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>133</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x60b0</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch A Position offset</Name>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>137</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x1703</Index>
+            <Name>Ch A Interpolator Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>PositionControlSlot</Name>
+        <ModuleIdent>#x671770</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>6756208</ModuleIdent>
+          <TxPdo Sm="3">
+            <Index DependOnSlot="true">#x1a26</Index>
+            <Name>Ch A PositionControl Inputs</Name>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x60f4</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch A Following error actual value</Name>
+              <Comment>This object provides the additional position actual values.</Comment>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61488</IndexGroup>
+                <IndexOffset>132</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b06</Index>
+            <Name>Ch A PositionControl Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo>
+            <Index DependOnSlot="true">#x1626</Index>
+            <Name>Ch A PositionControl Outputs</Name>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x1706</Index>
+            <Name>Ch A PositionControl Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>VelocityControlSlot</Name>
+        <ModuleIdent>#x672710</ModuleIdent>
+        <ModuleIdent>#x672711</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>6760208</ModuleIdent>
+          <TxPdo Sm="3">
+            <Index DependOnSlot="true">#x1a2a</Index>
+            <Name>Ch A VelocityControl Inputs</Name>
+            <Entry>
+              <Index>#x3141</Index>
+              <SubIndex>3</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Velocity actual value velocity observer</Name>
+              <DataType>REAL</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61488</IndexGroup>
+                <IndexOffset>136</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b0a</Index>
+            <Name>Ch A VelocityControl Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo>
+            <Index DependOnSlot="true">#x162a</Index>
+            <Name>Ch A VelocityControl Outputs</Name>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x170a</Index>
+            <Name>Ch A VelocityControl Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>BiquadFilter1</Name>
+        <ModuleIdent>#x672af8</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>BiquadFilter2</Name>
+        <ModuleIdent>#x672af8</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>BiquadFilter3</Name>
+        <ModuleIdent>#x672af8</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>BiquadFilter4</Name>
+        <ModuleIdent>#x672af8</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>TorqueControlSlot</Name>
+        <ModuleIdent>#x674650</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>6768208</ModuleIdent>
+          <TxPdo Sm="3">
+            <Index DependOnSlot="true">#x1a32</Index>
+            <Name>Ch A TorqueControl Inputs</Name>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x6077</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>16</BitLen>
+              <Name>Ch A Torque/force actual value</Name>
+              <DataType>INT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61488</IndexGroup>
+                <IndexOffset>140</IndexOffset>
+                <Length>2</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry>
+              <Index>#x3241</Index>
+              <SubIndex>3</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Limited torque/force demand value</Name>
+              <DataType>REAL</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61488</IndexGroup>
+                <IndexOffset>142</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b12</Index>
+            <Name>Ch A TorqueControl Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo Sm="2">
+            <Index DependOnSlot="true">#x1632</Index>
+            <Name>Ch A TorqueControl Outputs</Name>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x60b2</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>16</BitLen>
+              <Name>Ch A Torque/force offset</Name>
+              <DataType>INT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>141</IndexOffset>
+                <Length>2</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x6071</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>16</BitLen>
+              <Name>Ch A Target torque/force</Name>
+              <DataType>INT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>143</IndexOffset>
+                <Length>2</Length>
+              </AdsInfo>
+            </Entry>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x1712</Index>
+            <Name>Ch A TorqueControl Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>Motor</Name>
+        <ModuleIdent>#x6755f0</ModuleIdent>
+        <ModuleIdent>#x6755f3</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>6772208</ModuleIdent>
+          <TxPdo>
+            <Index DependOnSlot="true">#x1a36</Index>
+            <Name>Ch A SyncServoMotor Inputs</Name>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b16</Index>
+            <Name>Ch A SyncServoMotor Dynamic Inputs</Name>
+          </TxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>Primary Feedback</Name>
+        <ModuleIdent>#x6759d9</ModuleIdent>
+        <ModuleIdent>#x6759dd</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>6773209</ModuleIdent>
+          <TxPdo>
+            <Index DependOnSlot="true">#x1a37</Index>
+            <Name>Ch A [SL] OCT rotary (Hiperface DSL) Inputs</Name>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b17</Index>
+            <Name>Ch A [SL] OCT rotary (Hiperface DSL) Dynamic Inputs</Name>
+          </TxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch A</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="1" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>AxisDebugSlot</Name>
+        <ModuleIdent>#x677d0a</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>AxisMainSlot</Name>
+        <ModuleIdent>#x6703e8</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>6751208</ModuleIdent>
+          <TxPdo Mandatory="true" Sm="3">
+            <Index DependOnSlot="true">#x1a40</Index>
+            <Name>Ch B AxisMain Inputs</Name>
+            <Entry Fixed="true">
+              <Index>#x0</Index>
+              <BitLen>1</BitLen>
+            </Entry>
+            <Entry Fixed="true">
+              <Index DependOnSlotGroup="true">#x683e</Index>
+              <SubIndex>2</SubIndex>
+              <BitLen>1</BitLen>
+              <Name>Position actual value invalid</Name>
+              <Comment>This object shall indicate if the position encoder measured value is in invalid state.</Comment>
+              <DataType>BIT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61489</IndexGroup>
+                <IndexOffset>1169</IndexOffset>
+                <Length>1</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry Fixed="true">
+              <Index DependOnSlotGroup="true">#x683e</Index>
+              <SubIndex>3</SubIndex>
+              <BitLen>1</BitLen>
+              <Name>1st Additional position actual value invalid</Name>
+              <Comment>This object shall indicate if the first position encoder measured value is in invalid state.</Comment>
+              <DataType>BIT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61489</IndexGroup>
+                <IndexOffset>1170</IndexOffset>
+                <Length>1</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry Fixed="true">
+              <Index>#x0</Index>
+              <BitLen>5</BitLen>
+            </Entry>
+            <Entry Fixed="true">
+              <Index DependOnSlotGroup="true">#x6841</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>16</BitLen>
+              <Name>Ch B Statusword</Name>
+              <Comment>This object shall provide the status of the PDS FSA.
+- Bit 0: Ready to switch on
+- Bit 1: Switched on
+- Bit 2: Operation enabled
+- Bit 3: Fault
+- Bit 4: Voltage enabled
+- Bit 5: Quick stop
+- Bit 6: Switch on disabled
+- Bit 7: Warning
+- Bit 8: reserved
+- Bit 9: Remote
+- Bit 10: Status toggle (see also Object 0x60D9 and 0x60DA)
+- Bit 11: Internal limit active
+- Bit 12: Drive follows the command value (cyclic modes of operation)
+- Bit 13: Input cycle counter (see also Object 0x60D9 and 0x60DA)
+- Bit 14: reserved
+- Bit 15: reserved</Comment>
+              <DataType>UINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61488</IndexGroup>
+                <IndexOffset>147</IndexOffset>
+                <Length>2</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x6864</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch B Position actual value</Name>
+              <Comment>This object shall provide the actual value of the position measurement device.</Comment>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61488</IndexGroup>
+                <IndexOffset>149</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b20</Index>
+            <Name>Ch B AxisMain Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo Mandatory="true" Sm="2">
+            <Index DependOnSlot="true">#x1640</Index>
+            <Name>Ch B AxisMain Outputs</Name>
+            <Entry Fixed="true">
+              <Index DependOnSlotGroup="true">#x6840</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>16</BitLen>
+              <Name>Ch B Controlword</Name>
+              <Comment>This object shall indicate the received command controlling the PDS FSA.
+- Bit 0: Switch on
+- Bit 1: Enable voltage
+- Bit 2: Quick stop
+- Bit 3: Enable operation
+- Bit 4: reserved
+- Bit 5-6: Output cycle counter (see also Object 0x60D9 and 0x60DA)
+- Bit 7: Fault reset
+- Bit 8: Halt
+- Bit 9-15: reserved</Comment>
+              <DataType>UINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>145</IndexOffset>
+                <Length>2</Length>
+              </AdsInfo>
+            </Entry>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x1720</Index>
+            <Name>Ch B AxisMain Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>InterpolatorSlot</Name>
+        <ModuleIdent>#x670bb8</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>6753208</ModuleIdent>
+          <TxPdo>
+            <Index DependOnSlot="true">#x1a43</Index>
+            <Name>Ch B Interpolator Inputs</Name>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b23</Index>
+            <Name>Ch B Interpolator Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo Sm="2">
+            <Index DependOnSlot="true">#x1643</Index>
+            <Name>Ch B Interpolator Outputs</Name>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x687a</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch B Target position</Name>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>147</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x68ff</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch B Target velocity</Name>
+              <Comment>This object shall indicate the configured velocity threshold. The value shall be given in user defined velocity units.</Comment>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61472</IndexGroup>
+                <IndexOffset>151</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x1723</Index>
+            <Name>Ch B Interpolator Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>PositionControlSlot</Name>
+        <ModuleIdent>#x671770</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>6756208</ModuleIdent>
+          <TxPdo Sm="3">
+            <Index DependOnSlot="true">#x1a46</Index>
+            <Name>Ch B PositionControl Inputs</Name>
+            <Entry>
+              <Index DependOnSlotGroup="true">#x68f4</Index>
+              <SubIndex>0</SubIndex>
+              <BitLen>32</BitLen>
+              <Name>Ch B Following error actual value</Name>
+              <Comment>This object provides the additional position actual values.</Comment>
+              <DataType>DINT</DataType>
+              <AdsInfo>
+                <AmsAddress>
+                  <AmsPort>27908</AmsPort>
+                </AmsAddress>
+                <IndexGroup>61488</IndexGroup>
+                <IndexOffset>153</IndexOffset>
+                <Length>4</Length>
+              </AdsInfo>
+            </Entry>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b26</Index>
+            <Name>Ch B PositionControl Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo>
+            <Index DependOnSlot="true">#x1646</Index>
+            <Name>Ch B PositionControl Outputs</Name>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x1726</Index>
+            <Name>Ch B PositionControl Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>VelocityControlSlot</Name>
+        <ModuleIdent>#x672710</ModuleIdent>
+        <ModuleIdent>#x672711</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>6760208</ModuleIdent>
+          <TxPdo>
+            <Index DependOnSlot="true">#x1a4a</Index>
+            <Name>Ch B VelocityControl Inputs</Name>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b2a</Index>
+            <Name>Ch B VelocityControl Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo>
+            <Index DependOnSlot="true">#x164a</Index>
+            <Name>Ch B VelocityControl Outputs</Name>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x172a</Index>
+            <Name>Ch B VelocityControl Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>BiquadFilter1</Name>
+        <ModuleIdent>#x672af8</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>BiquadFilter2</Name>
+        <ModuleIdent>#x672af8</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>BiquadFilter3</Name>
+        <ModuleIdent>#x672af8</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>BiquadFilter4</Name>
+        <ModuleIdent>#x672af8</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>TorqueControlSlot</Name>
+        <ModuleIdent>#x674650</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>6768208</ModuleIdent>
+          <TxPdo>
+            <Index DependOnSlot="true">#x1a52</Index>
+            <Name>Ch B TorqueControl Inputs</Name>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b32</Index>
+            <Name>Ch B TorqueControl Dynamic Inputs</Name>
+          </TxPdo>
+          <RxPdo>
+            <Index DependOnSlot="true">#x1652</Index>
+            <Name>Ch B TorqueControl Outputs</Name>
+          </RxPdo>
+          <RxPdo Su="1">
+            <Index DependOnSlot="true">#x1732</Index>
+            <Name>Ch B TorqueControl Dynamic Outputs</Name>
+          </RxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>Motor</Name>
+        <ModuleIdent>#x6755f0</ModuleIdent>
+        <ModuleIdent>#x6755f3</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>6772208</ModuleIdent>
+          <TxPdo>
+            <Index DependOnSlot="true">#x1a56</Index>
+            <Name>Ch B SyncServoMotor Inputs</Name>
+          </TxPdo>
+          <TxPdo Su="1">
+            <Index DependOnSlot="true">#x1b36</Index>
+            <Name>Ch B SyncServoMotor Dynamic Inputs</Name>
+          </TxPdo>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>Primary Feedback</Name>
+        <ModuleIdent>#x6759d9</ModuleIdent>
+        <ModuleIdent>#x6759dd</ModuleIdent>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="1" MaxInstances="1" SlotPdoIncrement="0" SlotGroupPdoIncrement="0" SlotIndexIncrement="0" SlotGroupIndexIncrement="0" MdpChannel="0">
+        <Name>Empty Slot</Name>
+        <ModuleIdent>#x0</ModuleIdent>
+        <Module>
+          <Name>Ch B</Name>
+          <ModuleIdent>0</ModuleIdent>
+        </Module>
+      </Slot>
+      <Slot SlotGroup="2" MinInstances="0" MaxInstances="1" SlotPdoIncrement="1" SlotGroupPdoIncrement="0" SlotIndexIncrement="32" SlotGroupIndexIncrement="2048" MdpChannel="0">
+        <Name>AxisDebugSlot</Name>
+        <ModuleIdent>#x677d0a</ModuleIdent>
+      </Slot>
+      <TwinCAT>
+        <ExtensionSupportFlags>1</ExtensionSupportFlags>
+      </TwinCAT>
+    </Slave>
+    <AmsAddress>
+      <AmsNetId>172.18.238.10.6.1</AmsNetId>
+      <AmsPort>1014</AmsPort>
+    </AmsAddress>
+    <CoeDS402Channels>2</CoeDS402Channels>
+    <LinkedAxis Chn="0">TINC^NC-Task 1 SAF^Axes^Axis 3</LinkedAxis>
+    <LinkedAxis Chn="1">TINC^NC-Task 1 SAF^Axes^Axis 4</LinkedAxis>
+  </EtherCAT>
+</TreeItem>

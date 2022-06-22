@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <GVL Name="link" Id="{9bd629e3-95e1-42f0-9b67-af1f8b09ac2c}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	
+
+	{attribute 'TcLinkTo' := 'TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 13 (AX8206-0000-0103)^Ch A^Ch A Interpolator Outputs^Ch A Target velocity'}
+	xAxisVelocity AT %Q* : DINT := 0;
+	
+	{attribute 'TcLinkTo' := 'TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 13 (AX8206-0000-0103)^Ch B^Ch B Interpolator Outputs^Ch B Target velocity'}
+	yAxisVelocity AT %Q* : DINT := 0;
+	
+	{attribute 'TcLinkTo' := 'TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 14 (AX8206-0000-0103)^Ch A^Ch A Interpolator Outputs^Ch A Target velocity'}
+	zAxisVelocity AT %Q* : DINT := 0;
+	
+	{attribute 'TcLinkTo' := 'TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 13 (AX8206-0000-0103)^Ch A^Ch A TorqueControl Outputs^Ch A Target torque/force'}
+	torqueX AT %Q* : INT := 0;
+	
+	{attribute 'TcLinkTo' := 'TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 13 (AX8206-0000-0103)^Ch B^Ch B TorqueControl Outputs^Ch B Target torque/force'}
+	torqueY AT %Q* : INT := 0;
+	
+	{attribute 'TcLinkTo' := 'TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 13 (AX8206-0000-0103)^Ch A^Ch A TorqueControl Outputs^Ch A Torque/force offset'}
+	torqueOfsetX AT %Q* : INT := 0;
+	
+	{attribute 'TcLinkTo' := 'TIID^Device 5 (EtherCAT)^Term 12 (AX8640-0000-0103)^Drive 13 (AX8206-0000-0103)^Ch B^Ch B TorqueControl Outputs^Ch B Torque/force offset'}
+	torqueOfsetY AT %Q* : INT := 0;
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

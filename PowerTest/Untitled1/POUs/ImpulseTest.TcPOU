@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="ImpulseTest" Id="{c390f270-7a3e-41da-ac54-2a0b3de05886}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM ImpulseTest
+VAR
+	
+	frequency : LREAL :=0 ;
+	bias : LREAL :=0.4;
+	duration: LREAL := 1000;
+	torqueInput: REAL:= 0.05;
+	torqueStarter : BOOL:= FALSE;
+	state : INT := 10;	
+	counter : LREAL := 0;
+	f0 :LREAL	:=0;
+	f1 :LREAL:=100;
+	T : LREAL ;
+	
+	x: LREAL;
+	
+	trial: INT := 0;
+	delay: TON;
+	timerRunCmd: BOOL := FALSE;
+	timerValue: TIME := T#5000MS;
+	timerOutput: BOOL := FALSE;
+	elapsedTime: TIME := T#0MS;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE state OF
+	
+10 :
+	
+	IF MAIN.dummy = 0 AND torqueStarter THEN
+		state := 20;
+	ELSIF MAIN.dummy = 1 AND torqueStarter THEN
+		state := 30;
+	END_IF
+ 
+	
+20 :
+IF 	torqueStarter THEN
+	counter := counter +1;
+	IF counter < duration THEN
+		T :=duration/1000.0;
+		frequency := f0 + counter/1000.0 *(f1-f0)/T;	
+		//link.torqueOfsetX := REAL_TO_INT(torqueInput*(1000/2.37));
+		x:=SIN(2*pi*((f0*counter/1000)+((f1-f0)/(2*T)*(EXPT(counter/1000,2)))));
+			IF MAIN.opertionModeRead=10 THEN
+		//link.torqueOfsetX := LREAL_TO_INT(torqueInput*(1000/2.37)*x);
+			link.torqueX := LREAL_TO_INT((torqueInput*1000/2.37)*(x+bias/(torqueInput)));
+			
+			ELSIF MAIN.opertionModeRead=9 THEN				
+			link.torqueOfsetX := LREAL_TO_INT(torqueInput*(1000/2.37)*x);
+			END_IF
+	ELSE
+		link.torqueX := 0;
+		link.torqueOfsetX := 0;
+		torqueStarter := FALSE;
+		counter := 0;
+		state := 60;
+		
+	END_IF
+ELSE
+	link.torqueOfsetX := 0;
+END_IF
+	
+30 :
+IF 	torqueStarter THEN
+	counter := counter +1;
+	IF counter < duration THEN
+		T :=duration/1000.0;
+		frequency := f0 + counter/1000.0 *(f1-f0)/T;	
+		//link.torqueOfsetY := REAL_TO_INT(torqueInput*(1000/2.37));
+		x:=SIN(2*pi*((f0*counter/1000)+((f1-f0)/(2*T)*(EXPT(counter/1000,2)))));
+			IF MAIN.opertionModeRead=10 THEN
+		//link.torqueOfsetY := LREAL_TO_INT(torqueInput*(1000/2.37)*x);
+			//link.torqueY := LREAL_TO_INT((torqueInput*1000/2.37)*(x+bias/(torqueInput)));
+			link.torqueY := LREAL_TO_INT((torqueInput*1000/2.37));
+			
+			
+			ELSIF MAIN.opertionModeRead=9 THEN				
+			link.torqueOfsetY := LREAL_TO_INT(torqueInput*(1000/2.37)*x);
+			END_IF
+	ELSE
+		link.torqueY := 0;
+		link.torqueOfsetY := 0;
+		torqueStarter := FALSE;
+		counter := 0;
+		state := 60;
+		
+	END_IF
+ELSE
+	link.torqueOfsetY := 0;
+END_IF
+
+60 :
+	//delay(IN:= timerRunCmd, PT:= timerValue, Q=> timerOutput, ET=> elapsedTime);
+	trial := trial +1;
+	IF trial<6 THEN	
+		torqueStarter:=TRUE;
+		state :=30;
+		counter := 0;
+	ELSE 
+		torqueStarter:=FALSE;
+		state :=10;
+		counter := 0;
+		trial := 0;
+	END_IF
+	
+			
+	
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="ImpulseTest">
+      <LineId Id="199" Count="48" />
+      <LineId Id="269" Count="1" />
+      <LineId Id="248" Count="14" />
+      <LineId Id="276" Count="0" />
+      <LineId Id="263" Count="0" />
+      <LineId Id="277" Count="0" />
+      <LineId Id="282" Count="0" />
+      <LineId Id="271" Count="0" />
+      <LineId Id="274" Count="1" />
+      <LineId Id="272" Count="0" />
+      <LineId Id="278" Count="0" />
+      <LineId Id="280" Count="1" />
+      <LineId Id="279" Count="0" />
+      <LineId Id="311" Count="0" />
+      <LineId Id="273" Count="0" />
+      <LineId Id="266" Count="2" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

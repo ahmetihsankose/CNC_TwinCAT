@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="MAIN" Id="{d4c23686-4223-4849-8fc3-1f69218d516d}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	state: INT	:=	0;	
+	start: BOOL	:=	FALSE;
+	operationModeWrite: SINT	:=	10;	
+	
+	{attribute 'TcNcAxis' := '[0]:=Axis 1;[1]:=Axis 2;[2]:=Axis 3'} 
+    // Using an axis in an array.
+    setAxis     : ARRAY [0..2] OF AXIS_REF;
+	
+	opertionModeRead: SINT;
+	
+	fbCoERead: FB_CoERead;
+	
+	MotorEnable: BOOL:=FALSE;
+	
+	mcReset: MC_Reset;
+	mcPower: MC_Power;
+	
+////////
+	
+	operitonModeCh: WORD;
+	subIndex: BYTE;	
+	axisSelect: (xAxis, yAxis, zAxis, xyAxis, allAxis);	
+	fbCoEWrite: FB_CoEWrite;	
+	//torque : FB_TorqueInput;
+	
+END_VAR
+VAR_INPUT
+	dummy : INT ;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE state OF
+	//Axis Selection
+0:
+	IF start THEN
+		
+		IF axisSelect = xAxis THEN
+			operitonModeCh := 16#6060;
+			subIndex := 0;
+			MotorEnable:=TRUE;
+			dummy := 0;	
+		ELSIF axisSelect = yAxis THEN	
+			operitonModeCh := 16#6860;		
+			subIndex := 0;
+			MotorEnable:=TRUE;	
+			dummy := 1;	
+		ELSIF axisSelect = zAxis THEN	
+			operitonModeCh := 16#6860;
+			MotorEnable:=TRUE;	
+			dummy := 2;
+			subIndex := 0;
+			
+		ELSIF axisSelect = xyAxis THEN	
+			operitonModeCh := 16#6860;
+			MotorEnable:=TRUE;	
+			dummy := 3;
+			subIndex := 0;
+		END_IF
+		
+		state:=200;
+		start:=FALSE;		
+	END_IF
+	
+	//Mod of operation
+200:
+
+
+	fbCoEWrite(
+		Axis:= setAxis[dummy], 
+		NetId:='', 
+		Index:= operitonModeCh, 
+		SubIndex:=subIndex,
+		pSrcBuf:= ADR(operationModeWrite), 
+		BufLen:= SIZEOF(operationModeWrite), 
+		Execute:=TRUE , 		
+		CompleteAccess:=TRUE , 
+		 );
+		
+	IF NOT fbCoEWrite.Busy THEN
+		fbCoEWrite(
+		Axis:= setAxis[dummy], 
+		NetId:='', 
+		Index:= operitonModeCh, 
+		SubIndex:=subIndex, 
+		pSrcBuf:= ADR(operationModeWrite), 
+		BufLen:= SIZEOF(operationModeWrite), 
+		Execute:=FALSE , 		
+		CompleteAccess:=TRUE , 
+		 );
+		
+		fbCoERead(
+			Axis:=setAxis[dummy] , 
+			NetId:= '', 
+			Index:= operitonModeCh,
+			SubIndex:= subIndex,
+			pDstBuf:= ADR(opertionModeRead), 
+			BufLen:= SIZEOF(opertionModeRead), 
+			Execute:= TRUE, 			
+			CompleteAccess:=TRUE , 
+			 );
+			
+			IF opertionModeRead = operationModeWrite AND NOT fbCoERead.Busy THEN
+			
+				fbCoeRead(Axis:=setAxis[dummy],Execute:=FALSE );
+				IF NOT fbCoERead.Execute THEN
+					state:=210;
+				END_IF
+			END_IF
+	END_IF
+	
+	//power enable
+	//motor enable
+210:
+	mcReset(
+	Axis:=setAxis[dummy] , 
+	Execute:=TRUE , 
+	 );
+	IF NOT mcReset.Busy AND mcReset.Done THEN		
+		mcReset(Axis:=setAxis[dummy], Execute:=FALSE);		
+		state:=220;
+	END_IF
+	
+	220:
+	
+	mcPower(
+	Axis:=setAxis[dummy] , 
+	Enable:= MotorEnable , 
+	Enable_Positive:= MotorEnable, 
+	Enable_Negative:= MotorEnable, 
+ );
+	IF (mcPower.Status AND MotorEnable) OR (NOT mcPower.Status AND NOT MotorEnable) THEN 
+
+		state:=230;
+	END_IF
+	
+
+230:
+
+// 	torque(torqueInput:=20, duration:=2);
+//	IF torque.busy = FALSE THEN
+//		state := 232;
+//	END_IF
+
+ 
+232:
+  
+// velocityInput();
+// IF NOT velocityInput.busy THEN
+//	 state := 240;
+// END_IF
+ 
+240 :
+ mcReset(
+	Axis:=setAxis[dummy] , 
+	Execute:=TRUE , 
+	 );
+	IF NOT mcReset.Busy AND mcReset.Done THEN		
+		mcReset(Axis:=setAxis[dummy], Execute:=FALSE);		
+		state:=250;
+	END_IF
+ 
+	250:
+ 	MotorEnable := FALSE;
+ 	mcPower(
+	Axis:=setAxis[dummy] , 
+	Enable:= MotorEnable , 
+	Enable_Positive:= MotorEnable, 
+	Enable_Negative:= MotorEnable, 
+ );
+	IF (mcPower.Status AND MotorEnable) OR (NOT mcPower.Status AND NOT MotorEnable) THEN 
+		state:=260;
+	END_IF
+	//Motor disable
+260:
+ 	
+
+	state := 0;
+
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="950" Count="10" />
+      <LineId Id="1257" Count="0" />
+      <LineId Id="1181" Count="0" />
+      <LineId Id="1216" Count="0" />
+      <LineId Id="1183" Count="0" />
+      <LineId Id="965" Count="11" />
+      <LineId Id="1145" Count="0" />
+      <LineId Id="977" Count="1" />
+      <LineId Id="980" Count="17" />
+      <LineId Id="1248" Count="8" />
+      <LineId Id="998" Count="46" />
+      <LineId Id="1130" Count="14" />
+      <LineId Id="1060" Count="27" />
+      <LineId Id="23" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
