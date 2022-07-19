@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="TorqueCounnter" Id="{11272ec1-26bf-41ff-be6d-e0596e66524e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM TorqueCounnter
+VAR
+	startTest: BOOL:=FALSE;
+	i :INT:=1;
+	Torque_Nm: INT:=5;
+	j: INT:=14;
+	TorqueCounter: INT:=0;
+	TorqInterval  : INT:=100;
+	n: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF startTest THEN
+				TorqueCounter := TorqueCounter + 1;
+				
+				IF   TorqueCounter >= TorqInterval*(i-1) AND TorqueCounter <TorqInterval*i THEN
+					 IF i<=j/2 THEN
+						FOR i:=1 TO j/2 BY 1 DO	
+							
+								IF i MOD 2=1 THEN
+								link.torqueX := TO_INT(Torque_Nm * i/2.37*1000);
+								ELSE
+								link.torqueX := TO_INT(-Torque_Nm * i/2.37*1000);	
+	 							END_IF
+								
+							
+						 END_FOR
+					   ELSIF i>j/2 THEN
+	  					FOR i:=j TO j/2 BY -1 DO	
+							IF i MOD 2=1 THEN
+								link.torqueX := TO_INT(Torque_Nm * i/2.37*1000);
+							ELSE
+								link.torqueX := TO_INT(-Torque_Nm * i/2.37*1000);	
+	 						END_IF							
+						 END_FOR
+						
+					END_IF					
+					
+				END_IF				
+						
+			ELSE
+		link.torqueX := 0;
+		startTest := FALSE;
+		TorqueCounter := 0; 	
+END_IF	]]></ST>
+    </Implementation>
+    <LineIds Name="TorqueCounnter">
+      <LineId Id="6" Count="1" />
+      <LineId Id="78" Count="0" />
+      <LineId Id="38" Count="1" />
+      <LineId Id="56" Count="0" />
+      <LineId Id="58" Count="0" />
+      <LineId Id="10" Count="4" />
+      <LineId Id="61" Count="0" />
+      <LineId Id="60" Count="0" />
+      <LineId Id="25" Count="0" />
+      <LineId Id="42" Count="0" />
+      <LineId Id="44" Count="5" />
+      <LineId Id="43" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="63" Count="0" />
+      <LineId Id="66" Count="0" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="52" Count="2" />
+      <LineId Id="51" Count="0" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

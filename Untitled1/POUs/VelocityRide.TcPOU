@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="VelocityRide" Id="{333edcd8-7d23-44a5-9a35-7ff3ff5d622a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM VelocityRide
+VAR
+	startVelocity: BOOL := FALSE;
+	VelocityCounter: DINT;
+	VelocityInterval: DINT := 2000;
+	VelocityMmPerSecond: DINT := 5;
+	
+	state: INT := 0;
+	
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE state OF
+
+
+0 :
+	
+	IF MAIN.dummy = 0 AND startVelocity  THEN
+		state := 10;
+	ELSIF MAIN.dummy = 1 AND startVelocity THEN
+		state := 30;
+	END_IF	
+		
+10 : 
+			IF startVelocity THEN
+				VelocityCounter := VelocityCounter + 1;
+				IF VelocityCounter < VelocityInterval THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 0) / 5 * 10000 * 60 );
+					
+				ELSIF VelocityCounter >= VelocityInterval AND VelocityCounter < VelocityInterval * 2 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 0) / 5 * 10000 * 60 );
+					
+				ELSIF VelocityCounter >= VelocityInterval*2 AND VelocityCounter < VelocityInterval*3 THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 1) / 5 * 10000 * 60 );
+ 
+				ELSIF VelocityCounter >= VelocityInterval*3 AND VelocityCounter < VelocityInterval*4 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 1) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*4 AND VelocityCounter < VelocityInterval*5 THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 2) / 5 * 10000 * 60 );
+ 
+				ELSIF VelocityCounter >= VelocityInterval*5 AND VelocityCounter < VelocityInterval*6 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 2) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*6 AND VelocityCounter < VelocityInterval*7 THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 3) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*7 AND VelocityCounter < VelocityInterval*8 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 3) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*8 AND VelocityCounter < VelocityInterval*9 THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 4) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*9 AND VelocityCounter < VelocityInterval*10 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 4) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*10 AND VelocityCounter < VelocityInterval*11 THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 5) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*11 AND VelocityCounter < VelocityInterval*12 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 5) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*12 AND VelocityCounter < VelocityInterval*13 THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 6) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*13 AND VelocityCounter < VelocityInterval*14 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 6) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*14 AND VelocityCounter < VelocityInterval*15 THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 7) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*15 AND VelocityCounter < VelocityInterval*16 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 7) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*16 AND VelocityCounter < VelocityInterval*17 THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 8) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*17 AND VelocityCounter < VelocityInterval*18 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 8) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*18 AND VelocityCounter < VelocityInterval*19 THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 9) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*19 AND VelocityCounter < VelocityInterval*20 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 9) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*20 AND VelocityCounter < VelocityInterval*21 THEN
+					link.xAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 10) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*21 AND VelocityCounter < VelocityInterval*22 THEN
+					link.xAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 10) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*22 THEN
+					link.xAxisVelocity := 0;
+					startVelocity := 0;
+					state := 60;
+					
+				END_IF
+			ELSE
+				state := 60;
+			END_IF
+			
+30 : 
+			IF startVelocity THEN
+				VelocityCounter := VelocityCounter + 1;
+				IF VelocityCounter < VelocityInterval THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 0) / 5 * 10000 * 60 );
+					
+				ELSIF VelocityCounter >= VelocityInterval AND VelocityCounter < VelocityInterval * 2 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 0) / 5 * 10000 * 60 );
+					
+				ELSIF VelocityCounter >= VelocityInterval*2 AND VelocityCounter < VelocityInterval*3 THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 1) / 5 * 10000 * 60 );
+ 
+				ELSIF VelocityCounter >= VelocityInterval*3 AND VelocityCounter < VelocityInterval*4 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 1) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*4 AND VelocityCounter < VelocityInterval*5 THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 2) / 5 * 10000 * 60 );
+ 
+				ELSIF VelocityCounter >= VelocityInterval*5 AND VelocityCounter < VelocityInterval*6 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 2) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*6 AND VelocityCounter < VelocityInterval*7 THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 3) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*7 AND VelocityCounter < VelocityInterval*8 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 3) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*8 AND VelocityCounter < VelocityInterval*9 THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 4) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*9 AND VelocityCounter < VelocityInterval*10 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 4) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*10 AND VelocityCounter < VelocityInterval*11 THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 5) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*11 AND VelocityCounter < VelocityInterval*12 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 5) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*12 AND VelocityCounter < VelocityInterval*13 THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 6) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*13 AND VelocityCounter < VelocityInterval*14 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 6) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*14 AND VelocityCounter < VelocityInterval*15 THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 7) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*15 AND VelocityCounter < VelocityInterval*16 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 7) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*16 AND VelocityCounter < VelocityInterval*17 THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 8) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*17 AND VelocityCounter < VelocityInterval*18 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 8) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*18 AND VelocityCounter < VelocityInterval*19 THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 9) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*19 AND VelocityCounter < VelocityInterval*20 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 9) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*20 AND VelocityCounter < VelocityInterval*21 THEN
+					link.yAxisVelocity := TO_DINT((VelocityMmPerSecond + 10 * 10) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*21 AND VelocityCounter < VelocityInterval*22 THEN
+					link.yAxisVelocity := TO_DINT(-(VelocityMmPerSecond + 10 * 10) / 5 * 10000 * 60);
+					
+				ELSIF VelocityCounter >= VelocityInterval*22 THEN
+					link.yAxisVelocity := 0;
+					startVelocity := 0;
+					state := 60;
+					
+				END_IF
+			ELSE
+				state := 60;
+			END_IF
+			
+60 :
+	startVelocity:= FALSE;
+	state :=0;
+	VelocityCounter := 0;
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="VelocityRide">
+      <LineId Id="174" Count="0" />
+      <LineId Id="282" Count="0" />
+      <LineId Id="175" Count="8" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="187" Count="0" />
+      <LineId Id="9" Count="2" />
+      <LineId Id="101" Count="0" />
+      <LineId Id="49" Count="1" />
+      <LineId Id="102" Count="0" />
+      <LineId Id="98" Count="1" />
+      <LineId Id="103" Count="0" />
+      <LineId Id="100" Count="0" />
+      <LineId Id="97" Count="0" />
+      <LineId Id="110" Count="0" />
+      <LineId Id="106" Count="3" />
+      <LineId Id="105" Count="0" />
+      <LineId Id="112" Count="12" />
+      <LineId Id="127" Count="3" />
+      <LineId Id="125" Count="0" />
+      <LineId Id="131" Count="0" />
+      <LineId Id="133" Count="3" />
+      <LineId Id="132" Count="0" />
+      <LineId Id="137" Count="0" />
+      <LineId Id="139" Count="3" />
+      <LineId Id="138" Count="0" />
+      <LineId Id="143" Count="0" />
+      <LineId Id="145" Count="3" />
+      <LineId Id="144" Count="0" />
+      <LineId Id="149" Count="0" />
+      <LineId Id="151" Count="3" />
+      <LineId Id="150" Count="0" />
+      <LineId Id="155" Count="0" />
+      <LineId Id="157" Count="3" />
+      <LineId Id="156" Count="0" />
+      <LineId Id="161" Count="3" />
+      <LineId Id="308" Count="0" />
+      <LineId Id="104" Count="0" />
+      <LineId Id="43" Count="1" />
+      <LineId Id="307" Count="0" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="188" Count="0" />
+      <LineId Id="190" Count="71" />
+      <LineId Id="309" Count="3" />
+      <LineId Id="264" Count="0" />
+      <LineId Id="189" Count="0" />
+      <LineId Id="265" Count="0" />
+      <LineId Id="267" Count="3" />
+      <LineId Id="266" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

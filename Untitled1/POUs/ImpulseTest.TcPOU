@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="ImpulseTest" Id="{c390f270-7a3e-41da-ac54-2a0b3de05886}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM ImpulseTest
+VAR
+	duration: LREAL := 2;
+	torqueInput: REAL:= 0.05;
+	torqueStarter : BOOL:= FALSE;
+	state : INT := 10;	
+	counter : LREAL := 0;	
+	trial: INT := 5;
+	delaytime: LREAL := 5000;
+	counter1: LREAL := 0;
+	counter3: LREAL :=0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE state OF
+10 :
+
+	IF MAIN.dummy = 0 AND torqueStarter THEN
+		state := 20;
+	ELSIF MAIN.dummy = 1 AND torqueStarter THEN
+		state := 30;
+	END_IF
+	
+20 :
+IF 	torqueStarter THEN
+	counter := counter + MAIN.sampleTime;
+	IF counter < duration THEN
+			IF MAIN.opertionModeRead=10 THEN
+				link.torqueX := REAL_TO_INT(torqueInput*(1000/2.37));	
+			ELSIF MAIN.opertionModeRead=9 THEN				
+				link.torqueOfsetX := LREAL_TO_INT(torqueInput*(1000/2.37));
+			END_IF
+	ELSE
+		link.torqueX := 0;
+		link.torqueOfsetX := 0;
+		torqueStarter := FALSE;
+		counter := 0;
+		counter1:=0;			
+		state := 60;
+		
+	END_IF
+ELSE
+	link.torqueX := 0;
+	link.torqueOfsetX := 0;
+END_IF
+	
+30 :
+IF 	torqueStarter THEN
+	counter := counter + MAIN.sampleTime;
+	IF counter < duration THEN
+			IF MAIN.opertionModeRead=10 THEN
+				link.torqueY := REAL_TO_INT(torqueInput*(1000/2.37));	
+			ELSIF MAIN.opertionModeRead=9 THEN				
+				link.torqueOfsetY := LREAL_TO_INT(torqueInput*(1000/2.37));
+			END_IF
+	ELSE
+		link.torqueY := 0;
+		link.torqueOfsetY := 0;
+		torqueStarter := FALSE;
+		counter := 0;
+		counter1:=0;		
+		state := 60;
+		
+	END_IF
+ELSE
+	link.torqueY := 0;
+	link.torqueOfsetY := 0;
+END_IF
+
+60 :
+	counter1:=counter1+  MAIN.sampleTime;
+	IF counter1<delaytime THEN
+		torqueStarter:=FALSE;	
+		counter := 0;
+		
+		ELSE
+			counter3:=counter3+  1;	
+			IF counter3 < trial THEN
+				torqueStarter:=TRUE;		
+				state :=10;
+				counter := 0;
+			ELSE
+				torqueStarter:=FALSE;
+				counter3 := 0;		
+				state :=10;
+				counter := 0;
+				counter1 := 0;
+				counter3 := 0;
+		END_IF
+	END_IF
+END_CASE
+]]></ST>
+    </Implementation>
+    <LineIds Name="ImpulseTest">
+      <LineId Id="199" Count="0" />
+      <LineId Id="201" Count="6" />
+      <LineId Id="209" Count="4" />
+      <LineId Id="218" Count="0" />
+      <LineId Id="220" Count="0" />
+      <LineId Id="222" Count="7" />
+      <LineId Id="434" Count="0" />
+      <LineId Id="230" Count="3" />
+      <LineId Id="360" Count="0" />
+      <LineId Id="234" Count="3" />
+      <LineId Id="361" Count="12" />
+      <LineId Id="417" Count="0" />
+      <LineId Id="374" Count="5" />
+      <LineId Id="262" Count="0" />
+      <LineId Id="276" Count="0" />
+      <LineId Id="263" Count="0" />
+      <LineId Id="406" Count="0" />
+      <LineId Id="395" Count="0" />
+      <LineId Id="399" Count="0" />
+      <LineId Id="396" Count="0" />
+      <LineId Id="402" Count="0" />
+      <LineId Id="397" Count="0" />
+      <LineId Id="418" Count="0" />
+      <LineId Id="420" Count="0" />
+      <LineId Id="423" Count="1" />
+      <LineId Id="421" Count="0" />
+      <LineId Id="425" Count="0" />
+      <LineId Id="427" Count="0" />
+      <LineId Id="432" Count="0" />
+      <LineId Id="428" Count="0" />
+      <LineId Id="426" Count="0" />
+      <LineId Id="436" Count="1" />
+      <LineId Id="422" Count="0" />
+      <LineId Id="266" Count="0" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="412" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

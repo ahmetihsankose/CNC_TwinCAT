@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="leastSquare" Id="{dc622796-8e6d-40e4-82fc-660c42e39fa9}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM leastSquare
+VAR
+	state: USINT := 0;
+	Torque_Nm :REAL := 0.5;
+	duration :INT :=10000;
+	startTest :BOOL := FALSE;	
+	TorquePerThousand: INT;		
+
+	TorqueCounter: INT;
+	TorqInterval: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE state OF
+	
+0 :
+	
+	IF MAIN.dummy = 0 AND startTest  THEN
+		state := 10;
+	ELSIF MAIN.dummy = 1 AND startTest THEN
+		state := 30;
+	END_IF	
+
+	10: //varying amplitude squarewaves for least square
+			IF startTest THEN
+				TorqueCounter := TorqueCounter + 1;
+				IF TorqueCounter < TorqInterval THEN
+					link.torqueX := TO_INT(Torque_Nm * 1/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval AND TorqueCounter <TorqInterval*2 THEN
+					link.torqueX := TO_INT(-Torque_Nm *1/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*2 AND TorqueCounter <TorqInterval*3 THEN
+					link.torqueX := TO_INT(Torque_Nm * 2/2.37*1000); 
+				ELSIF TorqueCounter >= TorqInterval*3 AND TorqueCounter <TorqInterval*4 THEN
+					link.torqueX := TO_INT(-Torque_Nm * 2/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*4 AND TorqueCounter <TorqInterval*5 THEN
+					link.torqueX := TO_INT(Torque_Nm * 3/2.37*1000); 
+				ELSIF TorqueCounter >= TorqInterval*5 AND TorqueCounter <TorqInterval*6 THEN
+					link.torqueX := TO_INT(-Torque_Nm * 3/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*6 AND TorqueCounter <TorqInterval*7 THEN
+					link.torqueX := TO_INT(Torque_Nm * 4/2.37*1000); 
+					
+				ELSIF TorqueCounter >= TorqInterval*7 AND TorqueCounter <TorqInterval*8 THEN
+					link.torqueX := TO_INT(-Torque_Nm * 4/2.37*1000);		
+				ELSIF TorqueCounter >= TorqInterval*8 AND TorqueCounter <TorqInterval*9 THEN
+					link.torqueX := TO_INT(Torque_Nm * 3/2.37*1000); 
+				ELSIF TorqueCounter >= TorqInterval*9 AND TorqueCounter <TorqInterval*10 THEN
+					link.torqueX := TO_INT(-Torque_Nm * 3/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*10 AND TorqueCounter <TorqInterval*11 THEN
+					link.torqueX := TO_INT(Torque_Nm * 2/2.37*1000); 
+				ELSIF TorqueCounter >= TorqInterval*11 AND TorqueCounter <TorqInterval*12 THEN
+					link.torqueX := TO_INT(-Torque_Nm * 2/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*12 AND TorqueCounter <TorqInterval*13 THEN
+					link.torqueX := TO_INT(Torque_Nm * 1/2.37*1000); 
+				ELSIF TorqueCounter >= TorqInterval*13 AND TorqueCounter <TorqInterval*14 THEN
+					link.torqueX := TO_INT(-Torque_Nm * 1/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*14 THEN
+					link.torqueX := 0;
+					state:=60;
+				END_IF
+		ELSE
+		link.torqueX := 0;		
+		startTest := FALSE;
+		TorqueCounter := 0;
+		state := 60;
+		
+		END_IF
+	30: //varying amplitude squarewaves for least square
+			IF startTest THEN
+				TorqueCounter := TorqueCounter + 1;
+				IF TorqueCounter < TorqInterval THEN
+					link.torqueY := TO_INT(Torque_Nm * 0.5/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval AND TorqueCounter <TorqInterval*2 THEN
+					link.torqueY := TO_INT(-Torque_Nm *0.5/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*2 AND TorqueCounter <TorqInterval*3 THEN
+					link.torqueY := TO_INT(Torque_Nm * 1/2.37*1000); 
+				ELSIF TorqueCounter >= TorqInterval*3 AND TorqueCounter <TorqInterval*4 THEN
+					link.torqueY := TO_INT(-Torque_Nm * 1/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*4 AND TorqueCounter <TorqInterval*5 THEN
+					link.torqueY := TO_INT(Torque_Nm * 1.5/2.37*1000); 
+				ELSIF TorqueCounter >= TorqInterval*5 AND TorqueCounter <TorqInterval*6 THEN
+					link.torqueY := TO_INT(-Torque_Nm * 1.5/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*6 AND TorqueCounter <TorqInterval*7 THEN
+					link.torqueY := TO_INT(Torque_Nm * 2/2.37*1000); 
+				ELSIF TorqueCounter >= TorqInterval*7 AND TorqueCounter <TorqInterval*8 THEN
+					link.torqueY := TO_INT(-Torque_Nm * 2/2.37*1000); 	
+				ELSIF TorqueCounter >= TorqInterval*8 AND TorqueCounter <TorqInterval*9 THEN
+					link.torqueY := TO_INT(Torque_Nm * 2.5/2.37*1000); 				
+				ELSIF TorqueCounter >= TorqInterval*9 AND TorqueCounter <TorqInterval*10 THEN
+					link.torqueY := TO_INT(-Torque_Nm * 2.5/2.37*1000); 					
+
+				ELSIF TorqueCounter >= TorqInterval*10 AND TorqueCounter <TorqInterval*11 THEN
+					link.torqueY := TO_INT(Torque_Nm * 2/2.37*1000); 					
+				ELSIF TorqueCounter >= TorqInterval*11 AND TorqueCounter <TorqInterval*12 THEN
+					link.torqueY := TO_INT(-Torque_Nm * 2/2.37*1000);							
+				ELSIF TorqueCounter >= TorqInterval*12 AND TorqueCounter <TorqInterval*13 THEN
+					link.torqueY := TO_INT(Torque_Nm * 1.5/2.37*1000);			
+				ELSIF TorqueCounter >= TorqInterval*13 AND TorqueCounter <TorqInterval*14 THEN
+					link.torqueY := TO_INT(-Torque_Nm * 1.5/2.37*1000);		
+				ELSIF TorqueCounter >= TorqInterval*14 AND TorqueCounter <TorqInterval*15 THEN
+					link.torqueY := TO_INT(Torque_Nm * 1/2.37*1000); 
+				ELSIF TorqueCounter >= TorqInterval*15 AND TorqueCounter <TorqInterval*16 THEN
+					link.torqueY := TO_INT(-Torque_Nm * 1/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*16 AND TorqueCounter <TorqInterval*17 THEN
+					link.torqueY := TO_INT(Torque_Nm * 0.5/2.37*1000); 
+				ELSIF TorqueCounter >= TorqInterval*17 AND TorqueCounter <TorqInterval*18 THEN
+					link.torqueY := TO_INT(-Torque_Nm * 0.5/2.37*1000);
+				ELSIF TorqueCounter >= TorqInterval*18 THEN
+					link.torqueY := 0;
+					state:=60;
+				END_IF
+		ELSE
+		link.torqueY := 0;		
+		startTest := FALSE;
+		TorqueCounter := 0;
+		state := 60;
+		
+		END_IF
+	
+	
+60 :
+	startTest:= FALSE;
+	state :=0;
+	TorqueCounter := 0;
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="leastSquare">
+      <LineId Id="6" Count="0" />
+      <LineId Id="70" Count="0" />
+      <LineId Id="73" Count="5" />
+      <LineId Id="72" Count="0" />
+      <LineId Id="71" Count="0" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="235" Count="33" />
+      <LineId Id="270" Count="0" />
+      <LineId Id="274" Count="1" />
+      <LineId Id="277" Count="4" />
+      <LineId Id="293" Count="16" />
+      <LineId Id="354" Count="1" />
+      <LineId Id="360" Count="1" />
+      <LineId Id="384" Count="0" />
+      <LineId Id="366" Count="0" />
+      <LineId Id="386" Count="0" />
+      <LineId Id="380" Count="1" />
+      <LineId Id="383" Count="0" />
+      <LineId Id="370" Count="0" />
+      <LineId Id="357" Count="0" />
+      <LineId Id="353" Count="0" />
+      <LineId Id="311" Count="9" />
+      <LineId Id="325" Count="10" />
+      <LineId Id="271" Count="0" />
+      <LineId Id="161" Count="0" />
+      <LineId Id="85" Count="2" />
+      <LineId Id="84" Count="0" />
+      <LineId Id="88" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
